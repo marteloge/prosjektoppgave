@@ -1,21 +1,46 @@
-\documentclass[11pt, a4paper]{report}
+\documentclass[12pt, a4paper]{report}
 \usepackage[utf8]{inputenc}
+\usepackage{lscape}   % Make a page in landscape format \begin{landscape}
+\usepackage{colortbl} % To color table cells
+\usepackage{color} % Able to change textcolor
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{graphicx} % Able to add pictures
+\usepackage{parskip}  % Separate paragraphs with a blank line
+                      % rather than using indentation
+\usepackage{hyperref} % Support for hyperlinks
+\usepackage[protrusion=true,expansion=true]{microtype} % Improve justification
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{afterpage}
+\usepackage{lipsum}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{natbib}
 
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
 
 \begin{document}
-	
-	\include{frontpage}
-	\clearpage
-	\include{abstract}
-	\clearpage
-	\tableofcontents
-	\clearpage
+
+	\include{frontpage}\clearpage
+	\include{abstract}\clearpage
+	\tableofcontents \clearpage
 	
 	%Introduction
 	\include{introduction/introduction}\clearpage
-	\include{introduction/motivation}\clearpage
-	\include{introduction/problemdescription}\clearpage
-	\include{introduction/researchquestions}\clearpage
-	\include{introduction/deliverables}
+
+	%State-of-the-art Study
+	\include{StateOfTheArtStudy/stateoftheart}\clearpage
+	
+	%Related Work
+	\include{RelatedWork/relatedWork}
+
+	%Bibtex
+	\bibliographystyle{plain}
+	\bibliography{myBib}
 
 \end{document}
