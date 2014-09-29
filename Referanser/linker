@@ -1,0 +1,16 @@
+Linker:
+
+ - Foredrag Passwordscon med Markus: https://www.youtube.com/watch?v=ehHRBbthwSM 
+ 	* Forsøk husk et passord og hack en annen. 
+ 	* Testet med forskjellige passordtyper.
+
+ - Foredrag Passworscon med Jeuneise: http://www.youtube.com/watch?v=pW9znBArur8
+ 	* Hvor mye klarer et menneske å huske? Sekvens, farger, etc
+ 	* Security vs- heuristics. Risiko og frykten for å fly vs å kjøre bil. 
+ 	* Bias. Folk er dårlige til å oppfatte alvorlighetsgraden av en risiko.
+ 	* Har det noen gang blitt testet hva en bruker ville valgt hvis man fremstiller det som loss vs. gain?
+ 	  Det som blir presentert i foredraget er formulering av loss og gain. Man kan se på motspørsmål
+ 	  som "200 overlever", "400 vil dø". Alle velger den første fordi den fremstiller det som er positivt.
+
+- Når Andorid lanserte Unlock patterns: http://www.internetsafetyproject.org/wiki/graphical-passwords
+
