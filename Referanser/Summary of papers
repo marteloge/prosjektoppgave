@@ -1,4 +1,10 @@
-Title: "A Graphical Password Based System for Small Mobile Devices"
+
+DETTE ER EN LISTE OVER RELEVANTE PAPERS JEG HAR LEST
+
+--------------------------------------
+
+"A Graphical Password Based System for Small Mobile Devices"
+
 - Authors: Wazir Zada Kahn, Mohammed Y. Aalsalem and Yang Xiang
 - Keywords: 
 	* Graphical passwords
@@ -8,14 +14,57 @@ Title: "A Graphical Password Based System for Small Mobile Devices"
 	* Proposed solution (hybrid passsword, recognition and recall)
 	* List of graphical password schemes
 
-Title: "Touch me once and I know it's you! Implicit Authentication based on Touch Screen Patterns"
+--------------------------------------
+
+"Touch me once and I know it's you! Implicit Authentication based on Touch Screen Patterns"
+
 - Autors: Alexander De Luca, Alina Hang, Fredrik Brudy, Christian Lindner, Heinrich Hussmann
 - University of Munich - Germany
-- Keywords:
-	*
+- Keywords: 
+- Oppsummering: De ville teste ut et usynelig sikkerhetslag på unlock patterns vil hjelpe.
+Dette usynlige laget var at ved autentisering sjekket de måten man skrev inn passord + faktisk passord. 
+Her sjekket de om det var mulig å sjekke om du er riktig person ved å gjennomføre eksperiment. 
 
+--------------------------------------
 
-Title: "Graphical Passwords: Learning from the first twelve years"
+"Graphical Passwords: Learning from the first twelve years"
+
 - Authors: Robert Biddle, Sonia Chaiasson, P.C van Oorschot
+- Oppsummering: 
+	* Gjennomgår relevant forskning som har blitt gjennomført de siste årene og lager et paper som 
+	oppsummerer dette. 
+	* Går gjennom forskjellige klassifisering av grafiske passord
+	* Usability (password init, login, reset, change, etc.)
+	* Security (guessing attack like dictionary attacks. Also capture attacks like shoulder-surfing)
+	* Evaluering av graphical password schemes
+	* Videre arbeid med grafiske passord
+
+--------------------------------------
+
+"Quantifying the Security of Graphical Passwords: The Case of Android Unlock Patterns"
+
+- Authors: Sebastian Ullenbeck, Markus Dürmuth, Christopher Wolf, and Thorsten Holz
+- Oppsummering: gjort et stort eksperiment å samlet inn patterns ved "lek". Disse 
+mønstrene er analysert og bias for valg av passord er diskutert. 
+
+
+--------------------------------------
+
+"Exploring the Design Space of Graphical Passwords on Smartphones"
+- Authors: Florian Schaub, Marcel Walch, Bastian Könings, and Michael Weber
+- 
+
+
+--------------------------------------
+--------------------------------------
+
+
+TODO:
+LESELISTE! PAPERS JEG MÅ KOMME MEG GJENNOM.
+- Its a Hard Lock life: A field study of Smartphone (Un)locking behavior and risk perception
+- Authication Using Graphical Passwords: Basic Results
+- On User Choice in Graphical Password Schemes
+- Pass-Go: A proposal to Improve the Usability of Graphical Passwords
+
 
 

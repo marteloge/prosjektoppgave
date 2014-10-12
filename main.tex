@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{report}
+\documentclass[10pt, a4paper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{lscape}   % Make a page in landscape format \begin{landscape}
 \usepackage{colortbl} % To color table cells
@@ -30,14 +30,15 @@
 	\include{abstract}\clearpage
 	\tableofcontents \clearpage
 	
-	%Introduction
-	\include{introduction/introduction}\clearpage
+	%Chapter 1 - Introduction
+	\include{chapter1/introduction}
 
-	%State-of-the-art Study
-	\include{StateOfTheArtStudy/stateoftheart}\clearpage
-	
-	%Related Work
-	\include{RelatedWork/relatedWork}
+	% Chapter 2 - Litterature Study and Motivation
+	\include{chapter2/chapter2}
+	\include{chapter2/backgroundTheory}
+	\include{chapter2/structuredLitteratureStudy}
+	\include{chapter2/resultsLitteratureStudy}
+	\include{chapter2/motivation}
 
 	%Bibtex
 	\bibliographystyle{plain}
