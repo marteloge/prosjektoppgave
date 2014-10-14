@@ -1,16 +1,42 @@
 \section{Background Theory}
 
-	\subsection{Classification of Graphical Passwords}
+  \subsection{Authentication}
 
-    A varity of graphical passwords schemes have been created over the past years. Biddle et al. have collected research 
-    of the past decade on graphical password schemes \cite{Biddle}, dividing the schemes into three categories: recall-based, 
-    recognition-based, and cued-recall authentication. 
+  Authentication is the process of verifying whether a particular individual or a device should be granted access to a system or application running on a device \cite{IPAS}, e.g. verifying that you are the person that you pose to be.
 
-    \subsection*{Recall-based}
-      Recall-based graphical passwords are often referred to as drawmetric systems \cite{DeAngeli} because the user are
-      are reproducing a secret drawing. The password is normally drawn in a grid or a blank canvas, requireing the
-      user to reproduce the secret password from its memory.
-      Some of the known recall-based password schemes are Pass-Go and Draw-a-secret (DAS).
+  There are various authentication schemes described in the litterature, but you can broadly group them by the following characteristics \cite{IPAS}:
+
+    \begin{itemize}
+      \item Something you know
+      \item Something you have, and
+      \item Who you are
+    \end{itemize}
+
+  ``Something you know'' is often used in the classical login situation where the user have to use a username and password to get access to a system or device. Some of the commonly used passwords schemes are PIN's, alphanumeric passwords and graphical passwords that all are passwords with the characteristics of ``something you know''.
+
+  In many banking systems you have to use more than just something you know, but also nedd to use ``something you have'', like a security token or smart card, to pass the authentication process. 
+
+  The last characteristic of authentication was ``who you are''. This kind of authentication is called biometric authentication and can be divided into physiological and behavioral characteristics. The first is authentication using unique pcysical charateristics of the user like fingerprints, DNA, iris, etc. The last one are related to the pattern behavior of a person like voice recogition and typing rhythm. 
+
+  Some authentication processes are using more than one of the authentication characteristics to authenticate a user. An example of this is banking systems that often uses ``something you know'' combined with ``something you have''. This is often a username/password and a security token. 
+
+  \subsection{Classification of Passwords}
+
+    \subsection*{PIN's}
+    \subsection*{Alphanumeric passwords}
+    \subsection*{Graphical passwords}
+
+    A varity of graphical passwords schemes have been created over the past years. Biddle et al. have collected research of the past decade on graphical password schemes \cite{Biddle}, dividing the schemes into three categories: 
+
+    \begin{itemize}
+      \item Recall-based authentication
+      \item Recognition-based authentication, and 
+      \item Cued-recall authentication.
+    \end{itemize}
+
+    {\Large \bf Recall-based} \\
+    
+    Recall-based graphical passwords are often referred to as drawmetric systems \cite{DeAngeli} because the user are are reproducing a secret drawing. The password is normally drawn in a grid or a blank canvas, requireing the user to reproduce the secret password from its memory. Some of the known recall-based password schemes are Pass-Go and Draw-a-secret (DAS).
 
       \begin{figure}[H]
         \centering
@@ -19,11 +45,9 @@
         \caption{1) DAS 2)DAS with background}
       \end{figure}
 
-        
-    \subsection*{Recognition-based}
-      Recognition-based passwords are often referred to as cognometric systems \cite{DeAngeli} because the user recall 
-      a secret drawing, or sequence of drawings, and the reproduces it as the secret password. Example of implemented 
-      recognition-based password schemes are `Passface' and `Deja vu' that uses a sequence of user selected faces/images as a authentication code.
+    {\Large \bf Recognition-based}
+    
+    Recognition-based passwords are often referred to as cognometric systems \cite{DeAngeli} because the user recall a scret drawing, or sequence of drawings, and the reproduces it as the secret password. Example of implemented recognition-based password schemes are `Passface' and `Deja vu' that uses a sequence of user selected faces/images as a authentication code.
 
       \begin{figure}[H]
         \centering
@@ -32,12 +56,8 @@
         \caption{1) Passface 2) Deja vu}
       \end{figure}
 
-    \subsection*{Cued-recall}
-      Cued-recall are often referred to locimetric systems \cite{DeAngeli}. With cued-recall authentication typically 
-      require the users to remember and target a specific location within and image. This is a version of a recall-based 
-      authentication, but helps the user with the recall by showing an image and not just an grid or canvas. It is allso 
-      different from the recognition-based approah becuase the user need to indentify spesific locations in an image as a whole. 
-      One of the known Cued-Recall password scheme are PassPoints.
+    {\Large \bf Cued-recall} \\
+    Cued-recall are often referred to locimetric systems \cite{DeAngeli}. With cued-recall authentication typically require the users to remember and target a specific location within and image. This is a version of a recall-based authentication, but helps the user with the recall by showing an image and not just an grid or canvas. It is allso different from the recognition-based approah becuase the user need to indentify spesific locations in an image as a whole. One of the known Cued-Recall password scheme are PassPoints.
 
       \begin{figure}[H]
         \centering
@@ -45,8 +65,6 @@
         \caption{1) Passpoints}
       \end{figure}
 
-  
-  \clearpage
   \subsection{Android Unlock Pattern}
 
     % When was the first unlock pattern made
