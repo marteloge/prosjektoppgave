@@ -39,7 +39,7 @@
         \item Cued-recall authentication.
       \end{itemize}
 
-      {\Large \bf Recall-based} \\
+      {\bf Recall-based} \\
       
       Recall-based graphical passwords are often referred to as drawmetric systems \cite{DeAngeli} because the user are are reproducing a secret drawing. The password is normally drawn in a grid or a blank canvas, requireing the user to reproduce the secret password from its memory. Some of the known recall-based password schemes are Pass-Go and Draw-a-secret (DAS).
 
@@ -50,7 +50,7 @@
           \caption{1) DAS 2)DAS with background}
         \end{figure}
 
-      {\Large \bf Recognition-based}
+      {\bf Recognition-based}
       
       Recognition-based passwords are often referred to as cognometric systems \cite{DeAngeli} because the user recall a scret drawing, or sequence of drawings, and the reproduces it as the secret password. Example of implemented recognition-based password schemes are `Passface' and `Deja vu' that uses a sequence of user selected faces/images as a authentication code.
 
@@ -61,7 +61,7 @@
           \caption{1) Passface 2) Deja vu}
         \end{figure}
 
-      {\Large \bf Cued-recall} \\
+      {\bf Cued-recall} \\
       Cued-recall are often referred to locimetric systems \cite{DeAngeli}. With cued-recall authentication typically require the users to remember and target a specific location within and image. This is a version of a recall-based authentication, but helps the user with the recall by showing an image and not just an grid or canvas. It is allso different from the recognition-based approah becuase the user need to indentify spesific locations in an image as a whole. One of the known Cued-Recall password scheme are PassPoints.
 
         \begin{figure}[H]
@@ -92,6 +92,31 @@
     \subsection{Multi-factor Authentication}
 
   \section{Mobile Security}
+
+    %Må her ramse opp låsningsmekanismer på de forskjellige mobile os'ene
+    \subsection{Windows phone}
+    \subsection{Ios}
+    \subsection{Android OS}
+      
+      \subsection*{Android Unlock Pattern}
+
+      The Android Unlock Patterns are a simplified version of the Pass-Go scheme that was proposed by Tao and Adams in 2008, and can be seen as a successor of the Draw-a-Secret (DAS) scheme. Both Pass-Go, Draw-a-Secret, and Android Unlock Patterns is categorized as recall-based authentication schemes.
+
+      The Android password patterns are a simplified version of the Pass-Go scheme using a 3x3 grid, instead of a 9x9 as the Pass-Go scheme originally was designed. The Pass-Go scheme was inspiered from the chineese board game ``Go''.
+
+      The settings on Android phones provides a default setting for using the Unlock pattern. 
+      The rules are simple: 
+          \begin{enumerate}
+              \item At least four points must be chosen,
+              \item You cannot vist the same node twice.
+              \item Only straight lines are allowed, and
+              \item One cannot jump over point not visited before
+          \end{enumerate}
+
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.8]{pics/patternLock.png}
+      \end{figure}
 
 
 
