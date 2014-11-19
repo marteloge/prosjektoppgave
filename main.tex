@@ -26,12 +26,14 @@
 }
 
 \begin{document}
-
-	\include{frontpage}\clearpage
-	\include{abstract}\clearpage
-	\tableofcontents \clearpage
+	
+	\pagenumbering{arabic}
+	\include{frontpage}\clearpage \thispagestyle{empty}
+	\include{abstract}\clearpage \thispagestyle{empty} \cleardoublepage 
+	\tableofcontents \clearpage \thispagestyle{empty} \cleardoublepage 
 	
 	%Chapter 1 - Introduction
+	\setcounter{page}{1}
 	\include{chapter1/introduction}
 
 	% Chapter 2 - BackgroundTheory
