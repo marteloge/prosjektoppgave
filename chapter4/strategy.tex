@@ -37,64 +37,130 @@
 
     \subsection{Review of Human Properties} \label{sec:datarequirements}
 
-    \begin{itemize}
-      \item {\bf Age:} A group of people within a particular group of age may have different risk awareness. A person with an age of 30-40 and an individual with an age below 20 may have different concerns with security. An individual in the age between 30-40 may use their phone to perform a task with requiring high security. A person with an age below 20 may not have the same security awareness because of the different use of mobile devices.
-      \item {\bf Gender:} Psychological studies have reported that males are more likely to take risks than females \cite{Byrnes}. In the literature review, there was no reported results found in genders risk awareness in information security, nor people's choice of patterns based on gender.  
-      \item {\bf Nationality:} This demographic information is sometimes used in research for graphical passwords. When asking a person about their PIN code, a nationality can be used to find likely numbers to appear because some cultures associates a number to a historical or religious event. In a research on the ``PassFace'', this property was used and proven to be valuable because people tended to choose faces from the same race and nationality. In my research it is uncertain how much this information will help to prove any connection to the choice of patterns. Properties like language preference and reading/writing orientation look more promising in this research.
-      \item {\bf Language preference:} By asking the respondent for information about the language preference it can be used to see if the way they write or alphabet they use have any impact on their choice of lock pattern.
-      \item{\bf Occupation:} This information is valuable information due to the knowledge level of the respondents. The occupation of the a respondent are simply if the person is a student, employed, not employed or retired.
-      \item {\bf Profession:} The profession of a person may say something about a persons knowledge and background. When looking at profession, a person with a profession in IT may be more certain about the security aspects than people in other professions. It may cause bias in the data if people with enough knowledge of security overcompensate their choice of lock pattern because they want to prove their knowledge.  
-      \item {\bf Left- or right handed:} An interesting property of humans is the fact that people write with either left or right hand (and sometimes both). This property can influence the way a person are holding the mobile phone, and may impact the way that a person is choosing their pattern. In the literature review it was not found any studies that reported results of people choices in patterns based on the hand used. Published research \cite{Uellenbeck} found that over 40\% of the participants in a study started their Android pattern by starting in the top left corner, but did not record the hand used when making the pattern. My hypothesis is that a left handed person may be using the left hand while interacting with the phone, making the probability for starting in the right upper corner bigger. This have never been tested before and need further research before making a statement. 
-      \item {\bf Reading/writing orientation:} In different cultures, there is a difference in the reading and writing orientation. Cultures from Europe and America is normally writing and reading horizontally from left to right, but there are other cultures that do otherwise. Traditionally, Chinese, Japanese, and Korean are writing text vertically in columns from top to bottom, from right to left. Another writing orientation is horizontal from right to left that are used in Arabic cultures. Today, the vertical orientation from top to bottom is often in a horizontal way due to the influence of English and the increased computerized typesetting, but both ways are still in use. There are research that have reported that the writing orientation are affecting the visual attention and memory \cite{Chan}. They found that the reading orientation affected the way a person would memorize objects. They reported that English and Chinese speakers tended to remember an image that appeared in the top, left-hand side of the screen and the Taiwanese speakers tended to remember the images in the upper right-hand side of the screen. The interesting aspect of the reading and writing orientation is to see if people from different cultures are choosing different patterns due to their writing orientation.
-      \item {\bf Hand size:} Smartphones today tends to get bigger and bigger in size. An interesting analysis could be done by looking at a users choice of patterns based on size of their hands and size of mobile phone where a patterns is made. By looking at a situation were a person with a small hand and a big mobile device, it may be hard to reach certain areas on the screen by holding a device in one hand, and therefore impact the choice of pattern. 
-    \end{itemize}
+      \subsubsection*{Age}
+      A group of people within a particular group of age may have different risk awareness. A person with an age of 30-40 and an individual with an age below 20 may have different concerns with security. An individual in the age between 30-40 may use their phone to perform a task with requiring high security. A person with an age below 20 may not have the same security awareness because of the different use of mobile devices. Age is also interesting demographic information that can be used to group the respondents into different subgroups.
 
-    \begin{figure}[H]
-    \centering
-      \subfigure[Left-to-right]{
-        \includegraphics[scale=0.25]{pics/leftright.png}
-      }
-      \subfigure[Right-to-left]{
-        \includegraphics[scale=0.25]{pics/rightleft.png}
-      }
-      \subfigure[Top-to-bottom, left-to-right]{
-        \includegraphics[scale=0.27]{pics/topbottom.png}
-      }
-      \caption{Reading and writing orientation}
-    \end{figure}
+      \subsubsection*{Gender}
+      Psychological studies have reported that males are more likely to take risks than females \cite{Byrnes}. In the literature review, there was no reported results found in genders risk awareness in information security, nor people's choice of patterns based on gender.  
+      
+      \subsubsection*{Nationality} The nationality of users is often used in research on graphical passwords. When asking a person about their PIN code, a nationality can be used to find likely numbers to appear because some cultures associates a number with a historical or religious event. In a research on the ``PassFace'', the nationality of the participants was proven to be valuable because people tended to choose faces from the same race and nationality. In this research, it is uncertain how much this information will help to prove any connection between nationality and users choice in patterns. Properties like language preference and reading/writing orientation look more promising for this research.
+      
+      \subsubsection*{Language preference} By asking the respondent about their language preference, this can be used to see if the way they write or the alphabet they use impacts their choice in lock pattern. For example, the Chinese words are written in a different way then people using the Latin alphabet. In the Android Unlock Patterns, people are able to create patterns looking the same as the letters ``L'', ``M'', and ``O''. The Figure~\ref{fig:letters} there is an illustration the letters that are possible to select as a lock pattern. The same possibility could might be found in languages using a different alphabet than the Latin. When looking at PIN codes, there are certain numbers that have a different meaning than only its numeric value. In China, people are associating certain words with numbers or things based on the similarities of sound. For example, the number eight is considered as a lucky number because it is pronounced ``ba'', which sounds like the Chinese word for prosperity. When studying other numbers we can map the number 4 to ``death'', and the number 775 is decoded to ``Kiss me'' \cite{ChineseChatCodes}. Looking at selection of PIN codes based on people's language is an interesting. People tend to choose numbers in PIN codes that they can associate the number with something they now, like their date of birth. There is not known if the same observation can be found in the selection of patterns, but the language preference might give some interesting results. 
 
-    As a result from this review of different human properties, there is need for making a narrowed selection of of the listed properties that looks promising to give any results in the analysis. As stated earlier, the goal of this research is not to prove that all human properties will impact users choice of patters, but make a selection of human properties that this study find promising to look further into. The human properties that will be included in the analysis is the  "reading/writing orientation", "hand size", "Left- or right-handed". Beside the the three main selected properties, I want to collect some demographics and other background information about the users and their mobile devices. This will further be described in Section~\ref{sec:datacollection}. We will now (Subsection~\ref{sec:scenario}) look further into the selected properties in hypothetical scenarios to provide further understanding of the selected properties and possible observations that may occur when analyzing the collected data. 
+        \begin{figure}[H]
+          \centering
+          \subfigure[The letter L]{
+            \includegraphics[scale=0.20]{pics/letterL.png}
+          }
+          \subfigure[The letter M]{
+            \includegraphics[scale=0.20]{pics/letterM.png}
+          }
+          \subfigure[The letter O]{
+            \includegraphics[scale=0.20]{pics/letterO.png}
+          }
+          \caption{Patterns looking like letters}
+          \label{fig:letters}
+        \end{figure}
 
+      \subsubsection*{Occupation} 
+      This information is valuable information due to the knowledge level of the respondents. The occupation of the a respondent is simply if a person is a student, employed, not employed or retired.
+
+      \subsubsection*{Profession} 
+      The profession of a person may say something about a persons knowledge and background. When looking at profession, a person with a profession in IT may be more certain of the security aspects than people in other professions. It may cause bias in the data if people with enough knowledge of security overcompensate their choice of lock pattern because they want to prove their knowledge.  
+      
+      \subsubsection*{Handedness} 
+      An interesting property of humans is the fact that people write with either left or right hand (and sometimes both). This property can influence the way a person are holding a mobile phone, and may impact the way that a person is choosing their pattern. In the literature review, it was not found any studies that reported results of people choices in patterns based on the hand used. Published research \cite{Uellenbeck} found that over 40\% of the participants in their study started their Android pattern by beginning in the top left corner, but did not record the hand used when making the pattern. My hypothesis is that a left handed person may be using the left hand while interacting with the phone, making the probability for starting in the right upper corner bigger. This property has never been used before in analyzing Unlock Patterns. In Figure~\ref{fig:handedness} it is illustrated handedness and likely starting point. The numbers are collected from the research by Uellenbeck \cite{Uellenbeck}, where they measured likely initial points. Since it is more likely that people are right-handed, are we able to mirror the results to left-handed people? My hypothesis as stated earlier is that people that are left-handed are more likely to start in the upper right corner, while people that are right-handed are more likely to start in the upper left corner. The percent attached to the node are indicating the probability for starting the pattern at that node. 
+
+        \begin{figure}[H]
+          \centering
+          \subfigure{
+            \includegraphics[scale=0.2]{pics/handednessLeft.png}
+          }
+          \subfigure{
+             \includegraphics[scale=0.2]{pics/handednessRight.png}
+          }
+          \caption{Likely chosen initial starting point \cite{Uellenbeck} and handedness}
+          \label{fig:handedness}
+        \end{figure}
+
+      \subsubsection*{Reading/writing orientation} 
+      In different cultures, there is a difference in the reading and writing orientation. Cultures of Europe and America are usually writing and reading horizontally from left to right, but there are other cultures that do otherwise (Figure~\ref{fig:orientation}). Traditionally, Chinese, Japanese, and Korean are writing text vertically in columns from top to bottom, from right to left. Another writing orientation is horizontal from right to left that are used in Arabic cultures. Today, the vertical orientation from top to bottom is often in a horizontal way due to the influence of English and the increased computerized typesetting, but both ways are still in use. There are research that have reported that the writing orientation are affecting the visual attention and memory \cite{Chan}. They found that the reading orientation affected the way a person would memorize objects. They reported that English and Chinese speakers tended to remember an image that appeared in the top, left-hand side of the screen and the Taiwanese speakers tended to remember the images in the upper right-hand side of the screen. An interesting aspect of the reading and writing orientation is to see if people from different cultures are choosing different patterns due to their writing orientation. 
+
+        \begin{figure}[H]
+          \centering
+          \subfigure[Left-to-right]{
+            \includegraphics[scale=0.25]{pics/leftright.png}
+          }
+          \subfigure[Right-to-left]{
+            \includegraphics[scale=0.25]{pics/rightleft.png}
+          }
+          \subfigure[Top-to-bottom, left-to-right]{
+            \includegraphics[scale=0.27]{pics/topbottom.png}
+          }
+          \caption{Reading and writing orientation}
+          \label{fig:orientation}
+        \end{figure}
+
+      \subsubsection*{Hand size} 
+      Smartphones today tends to get bigger and bigger in size. An interesting analysis could be done by looking at user's choice in patterns based on size of their hands and size of mobile phone where a pattern is made. By looking at a situation where a person with a small hand is interacting with a big screen, it may be hard to reach certain areas of the screen when holding the smartphone in one hand. Maybe a right-handed person with a small hand interacting with a large screen will not be able to reach the upper left corner? (Illustrated in Figure~\ref{fig:reachablePoints}).
+
+        \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.2]{pics/screenHand.png}
+          \caption{Reachable points on screen}
+          \label{fig:reachablePoints}
+        \end{figure}
+
+      \subsubsection*{Finger used when creating pattern:} When looking at the finger used when creating the pattern, it impacts the areas on the smartphone where a person can reach. When interacting with a smartphone, the most common way is to either use the thumb or the forefinger. When combining this property with the screen size and the size of the hand, we might be able to predict selection of patterns and eliminate some possibilities. 
+
+    The human properties that will be included in the research is formulated as questions in the questionnaire in Section~\ref{sec:questions}. The structure and layout of the questionnaire are illustrated as wireframes in Section~\ref{sec:wireframes}.
+    
     \subsection{Sampling Frame and Technique} \label{sec:sampling}
       
-      The survey type is categorized as ``non-probability sampling'' and the chosen sample technique is ``self-selection strategy''. This is chosen due to time and cost estimates, and the lack of control of respondents. A Purposive sampling technique would maybe provide a more uniformly collection of people, but it is hard to control respondents when the questionnaire is distributed on the Internet. The self-selection strategy will collect data from any respondents, and will be helpful when there is big population with potential respondents. The self-selection is a useful technique when we are not able to directly contact the potential respondents. When people select themselves for research, it might indicate that they have a strong feeling on the subject, or because they think it will bring them personal benefit or approval. 
+    The {\it sampling frame} is a list of the whole population of people that could be included in the survey. When looking at the sample of this study, there is not possible to make a limited sampling frame that can be summered in a list. The population of the sample frame is considered as all people with a smartphone.
+      
+    When conducting a survey, it needs to be decided how to select people from the sampling frame. There are two different ways of doing sampling: probability sampling and non-probability sampling \cite{empiriske}. Probability sampling means that the sample has been chosen because the researcher believes that there is a high probability that the sample of respondents selected is representative for the overall population being studied. Non-probability sampling means that the researcher does not know whether the sample of people is the overall population.
 
-      The target population for this research is in general all people with a mobile device. Because of the selected human properties and demographics, it is desirable to divide the target populations into subgroups. The subgroups can be used to control the responses during the data collection in order to provide a wide diversity in the data. 
+    Because of the broad sampling frame it would be feasible to use non-probability sampling for this research. When using non-probability sampling, we make a decision that it is not practicable to describe a representative sample because there is too much uncertainty about the respondents that will voluntary answer the questionnaire. When choosing a non-probability sampling, we need to select a {\it sampling technique}. The possible sampling techniques we can choose from is purposive sampling, snowball sampling, self-selection sampling, and convenience sampling. 
+    The {\it purposive sampling technique} requires the researcher deliberately to choose people that are likely to produce valuable data to meet the purpose of the research. This requirement would not be a good technique because I am not able to pick who would participate, as well as the data collection need to be performed worldwide. A Purposive sampling technique would maybe provide a more uniformly collection of people, but it is hard to control respondents when the questionnaire is distributed on the Internet. 
+    The {\it snowball sampling technique} utilize the network from one person of the sample frame, and then collects new names from that person. The need for directly communicate with respondents is not possible for me as a researcher. {First}, I have no contact with the respondents. {Second}, the respondents should remain anonymous when answering the questionnaire, as well as there should be possible to track the information back to the respondent. 
+    When using the {\it convenience sampling technique}, the researcher only select respondents who are convenient for them, because they are easy to reach or willing to help. 
+    When doing {\it self-selection sampling}, the researcher advertise their interest in a particular topic and their need for respondents, and collect data from anyone who are willing to participate. The self-selection sampling strategy looks like an excellent fit for the research. The questionnaire needs to be distributed over the Internet, and the self-selection strategy will support this choice. People who select themselves for research often do so because they have strong feeling for the subject, or that the research can bring them a personal benefit. A self-selection sampling technique may also reduce the bias that can be introduced when the researcher hand-picks the respondents. With the self-selection sampling strategy allows all interested peoples with a smartphone to participate in the research. The self-selection is a useful technique when we are not able to directly contact the potential respondents.
 
-      \todo{Legge til en liste med subgroups}
+    \subsection{Sample Size} \label{sec:samplesize}
 
-      We will now look further into some strategies for collecting data in Subsection~\ref{sec:response} from some of the subgroups that is outside my own network that might be harder get responses from.
+      %I innledningen her må du være mye mer spesifikk. Hvorfor mener du målrguppen er med en 1 mill? Det er åpenbart, men du må si det allikevel. 
+
+      %Du må også argumentere for hvorfor en utvalgsstørrelse på 1000 er nok. Det holder ikke å si løst at det antagelig er det. 
+
+      %Du skriver her også om utfordringer knyttet til at delgrupper er underrepresentert i utvalget. Når du gjør det må du også diskutere utfordringen med at dersom du påvirker utvalget, f.eks for å få inn flere venstrehendte, så påvirker du også resultatene dine - som du kan trekke basert på hele utvalget, fordi det ikke lenger representerer et tverrsnitt av befolkningen. 
+
+    I need to decide how big I want my final sample to be, taking into account my best estimate of the likely non-response rate of participants. When looking at my target population that is very wide. My target population is higher than 1 million, and therefore I would probably would need 1000 respondents or more.
+
+    Because of the lack of control of the diversity of the respondents, there is likely to be some data properties that have a higher representation that others. Therefore it is important to control the data collected during the spring. If it occurs that a subpopulation is overrepresented, it is desired to use the strategy for smoothing the data from Subsection~\ref{sec:response}. The data collected should never be manipulated, and in a situation where there is lack of respondents from a subgroup, the only thing that I can do is to contact networks where there is a higher possibility to reached the subgroup that is underrepresented in the data.
+
+    The total sample size is quite high, but should be manageable. If the total amount of 1000 respondents is not reached, a minimum number of respondents should be accepted at 500. In the analysis it will be hard to make any conclusions if the total number of respondents is too low.  The Internet offers researchers the possibility of accessing many people across the world cheaply and quickly. Not everyone have Internet access, and that need to be considered in the design.
+
+    Since the sampling frame is wide, and the survey is going to be distributed with a self-selection sampling strategy over the Internet, it is still important to provide some level of control of the respondents. In the next section, we will look at some response strategy.
 
     \subsection{Response Rate and Non-responses} \label{sec:response}
 
-      When sending out the questionnaire I have no control over how many that are willing to respond, or how many people from different subgroups I am able to reach. To be able to reach the amount of data needed for a analysis, I need to look for a strategy that may increase the number of responses from the different subgroups. If I suspect that certain types of people in my sample are less willing to respond or harder to reach. I could deliberately include more of that subgroup in my sample so I can assure that I receive the number of respondents that I need. Maybe go face-to-face if a special group of people may be less willing to participate. 
+    When sending out the questionnaire I have no control over how many people are willing to respond to the questionnaire, or how many people from different subgroups I am able to reach. When talking about subgroups, it means that it is people with different human properties. To be able to achieve the amount of data needed for an analysis, I need to look for a strategy that may increase the number of responses from the different subgroups. If I suspect that certain types of people in my sample frame are less willing to respond or harder to reach, I could deliberately include more of that subgroup in my sample so I can assure that I receive the number of respondents that I need. Maybe go face-to-face if a particular group of people may be less willing to participate. 
 
-      In this list there will be made a strategy for collecting data from the  different subgroups. {\it First}, some subgroups might be less willing to respond to the questionnaire. {\bf Second}, some of the subgroups might be harder to reach because they are outside of my own network. 
+    In this list, there will be made a strategy for collecting data from the different subgroups. {\it First}, some subgroups might be less willing to respond to the questionnaire. {\bf Second}, some of the subgroups might be harder to reach because they are outside of my network. 
 
-      \begin{itemize}
-        \item {\bf People with age of 50 or higher:} People with the age over 50 may not own their own smartphone, or may be hard to reach for other reasons. I need to find networks were there is a high representation of people with a age of 50 or higher. In Norway there is a network called ``Seniorweb''. There is also a magazine called ``vi over 60'' that is a network that is highly represented with people with an age over 60. Both networks are possible to contact if there is a lack of respondents from this subgroup. 
-        \item {\bf People with a different field of interest than IT and security:} My own network is overrepresented by people with a profession in IT and security. I need to be able to find other networks to be able to reach out to other people wither other professions. To reach out to people with other professions, it is a possibility to use the network from my family or directly contact a company. The university is a good start because of the high representation of different field of study. 
-        \item {\bf People with a reading orientation from right-to-left:} The main reading orientation is from right-to-left, with a exception with some Arabic an Asian nationalities. My network do not include a high sample of people that have a other reading and writing orientation than my own. To reach out to other nationalities I can contact NTNU and ask for help to distribute my questionnaire to countries where NTNU have exchange programs. ``International section'' or other networks like ``ISFiT'' (International Student Festival in Trondheim). 
-        \item {\bf People living in a different country than Norway:} I need to get in touch with people from different nationalities in order to get diversity in the collected data. I will contact the International Section at my university to ask them to distribute my questionnaire to the exchange students at my university. I am also having a trip to Minnesota in USA in the following spring, and I will use my time there recruiting people to respond to my questionnaire. During this semester I have been talking to researchers in other countries because of their interest in my research. Hopefully, they can provide help to distribute the questionnaire within their own networks. As stated earlier, ``ISFiT'' is the international student festival in Trondheim. There is people traveling from all around the world to Trondheim. 
-        \item {\bf People that are left-handed:} There is a significant higher percentage of people that are right-handed, meaning that there is a possibility for getting more responses from people that are right-handed. Selecting a strategy for this is hard because there is not a known official network for left-handed people. There is a possibility for using groups at Facebook like ``Left-Hander's Club'' or the website called ``Left-handers day''. 
-      \end{itemize}
+    {\bf People with age of 50 or higher:} People with the age over 50 may not own a smartphone, or may be hard to reach for other reasons. I need to find networks were there is a high representation of people with an age of 50 or higher. In Norway there is a network called ``Seniorweb''. There is also a magazine called ``vi over 60'' that is a network that is highly represented with people with an age over 60. Both networks are possible to contact if there is a lack of respondents from this subgroup. 
 
-      When analyzing the collected data, I need to find subgroups that have responded and those who have to responded. This will be used to make a discussion of why it lacked responses from a particular subgroup. The reason why this is important is because their non-response might be meaningful in its own right, or their lack of responses may have introduced bias in the data. This part is out of scope for this thesis, but need to be considered in the next phase of this research.
+    {\bf People with a different field of interest than IT and security:} My own network is overrepresented by people with a profession in IT and security. I need to be able to find other networks to be able to reach out to other people wither other professions. To reach out to people with other professions, it is a possibility to use the network from my family or directly contact a company. The university is a good start because of the high representation of different field of study. 
     
-    \subsection{Sample Size} \label{sec:samplesize}
+    {\bf People with a reading orientation from right-to-left:} The main reading orientation is from right-to-left, with a exception with some Arabic an Asian nationalities. My network do not include a high sample of people that have a other reading and writing orientation than my own. To reach out to other nationalities I can contact NTNU and ask for help to distribute my questionnaire to countries where NTNU have exchange programs. ``International section'' or other networks like ``ISFiT'' (International Student Festival in Trondheim). 
+    
+    {\bf People living in a different country than Norway:} I need to get in touch with people from different nationalities in order to get diversity in the collected data. I will contact the International Section at my university to ask them to distribute my questionnaire to the exchange students at my university. I am also having a trip to Minnesota in USA in the following spring, and I will use my time there recruiting people to respond to my questionnaire. During this semester I have been talking to researchers in other countries because of their interest in my research. Hopefully, they can provide help to distribute the questionnaire within their own networks. As stated earlier, ``ISFiT'' is the international student festival in Trondheim. There is people traveling from all around the world to Trondheim. 
+    
+    {\bf People that are left-handed:} There is a significant higher percentage of people that are right-handed, meaning that there is a possibility for getting more responses from people that are right-handed. Selecting a strategy for this is hard because there is not a known official network for left-handed people. There is a possibility for using groups at Facebook like ``Left-Hander's Club'' or the website called ``Left-handers day''. 
 
-      I need to decide how big I want my final sample to be, taking into account my best estimate of the likely non-response rate of participants. When looking at my target population that is very wide. My target population is higher than 1 million, and therefore I would probably would need 1000 respondents or more.
+    When analyzing the collected data, I need to find subgroups that have responded and those who have to responded. This will be used to make a discussion of why it lacked responses from a particular subgroup. The reason why this is important is because their non-response might be meaningful in its own right, or their lack of responses may have introduced bias in the data. This part is out of scope for this thesis, but need to be considered in the next phase of this research.
 
-      Because of the lack of control of the diversity of the respondents, there is likely to be some data properties that have a higher representation that others. Therefore it is important to control the data collected during the spring. If it occurs that a subpopulation is overrepresented, it is desired to use the strategy for smoothing the data from Subsection~\ref{sec:response}. The data collected should never be manipulated, and in a situation where there is lack of respondents from a subgroup, the only thing that I can do is to contact networks where there is a higher possibility to reached the subgroup that is underrepresented in the data.
-
-      The total sample size is quite high, but should be manageable. If the total amount of 1000 respondents is not reached, a minimum number of respondents should be accepted at 500. In the analysis it will be hard to make any conclusions if the total number of respondents is too low.  The Internet offers researchers the possibility of accessing many people across the world cheaply and quickly. Not everyone have Internet access, and that need to be considered in the design.
+    
+    
+    
