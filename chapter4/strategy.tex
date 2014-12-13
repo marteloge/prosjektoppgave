@@ -77,7 +77,7 @@
             \includegraphics[scale=0.2]{pics/handednessLeft.png}
           }
           \subfigure{
-             \includegraphics[scale=0.2]{pics/handednessRight.png}
+            \includegraphics[scale=0.2]{pics/handednessRight.png}
           }
           \caption{Likely chosen initial starting point \cite{Uellenbeck} and handedness}
           \label{fig:handedness}
@@ -106,12 +106,20 @@
 
         \begin{figure}[H]
           \centering
-          \includegraphics[scale=0.2]{pics/screenHand.png}
+          \includegraphics[scale=0.22]{pics/screenHand.png}
           \caption{Reachable points on screen}
           \label{fig:reachablePoints}
         \end{figure}
 
-      \subsubsection*{Finger used when creating pattern:} When looking at the finger used when creating the pattern, it impacts the areas on the smartphone where a person can reach. When interacting with a smartphone, the most common way is to either use the thumb or the forefinger. When combining this property with the screen size and the size of the hand, we might be able to predict selection of patterns and eliminate some possibilities. 
+      \subsubsection*{Finger used when creating pattern:} When looking at the finger used when creating the pattern, it impacts the areas on the smartphone where a person can reach. When interacting with a smartphone, the most common way is to either use the thumb or the forefinger. When combining this property with the screen size and the size of the hand, we might be able to predict selection of patterns and eliminate some possibilities. In a book called ``Designing Mobile Interfaces'' \cite{Hoober}, they is using a expression called ``The thumb zone''. The Thumb Zone is the most comfortable area for a person to touch when using one-hand. Figure~\ref{fig:thumbZone} is showing the thumb area. The green area is where the thumb can easly access. The organge and the red areas is parst of the screen that is harder to reach. The thump zone can be used when looking at users choice of patterns because it is likeley to choose a pattern that is easy to type. 
+
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.20]{pics/mobileScreen.jpg}
+          \caption{The thumb zone}
+          \label{fig:thumbZone}
+        \end{figure}
+
 
     The human properties that will be included in the research is formulated as questions in the questionnaire in Section~\ref{sec:questions}. The structure and layout of the questionnaire are illustrated as wireframes in Section~\ref{sec:wireframes}.
     
@@ -129,19 +137,35 @@
 
     \subsection{Sample Size} \label{sec:samplesize}
 
-      %I innledningen her må du være mye mer spesifikk. Hvorfor mener du målrguppen er med en 1 mill? Det er åpenbart, men du må si det allikevel. 
+    It is important to decide on an appropriate sample size in order to conclude that the results to be statistically significant. When a sample size is too big, it will lead to unnecessary waste of time in this study due to the time frame of this project. On the other hand, if the sample size is too small, the results will not be statistically significant, and it might not be possible to come up with a reliable conclusion. 
 
-      %Du må også argumentere for hvorfor en utvalgsstørrelse på 1000 er nok. Det holder ikke å si løst at det antagelig er det. 
+    When looking a calculation of sample size you need to know the population size, preferred margin of error, desired confidence interval, and the the percentage of the population that is likely to answer. In this study, these parameters are hard to determine because of the non-probability sampling that is selected for this study. Non-probability sampling refers to the selection of the sample that is based on unknown portability. It is distinguished from probability sampling by the fact that subjective judgments play a role in selecting the sampling size. When using non-probability sampling, it does not give a sample units an equal likelihood of being included in the sample. The sample units are chosen so they can represent the population, and is decided by the experience of the Researcher. Because of this uncertainty, there is not a known formula for calculating the sample size. 
 
-      %Du skriver her også om utfordringer knyttet til at delgrupper er underrepresentert i utvalget. Når du gjør det må du også diskutere utfordringen med at dersom du påvirker utvalget, f.eks for å få inn flere venstrehendte, så påvirker du også resultatene dine - som du kan trekke basert på hele utvalget, fordi det ikke lenger representerer et tverrsnitt av befolkningen. 
+    We are not able to calculate the sample size by a known formula, but the sample size still needs to be decided based on my subjective meaning. The sample size is determined by what is achievable with the time frame available, as well as what I as a researcher think of as a good enough sample to ensure that the results can be statistically significant. 
 
-    I need to decide how big I want my final sample to be, taking into account my best estimate of the likely non-response rate of participants. When looking at my target population that is very wide. My target population is higher than 1 million, and therefore I would probably would need 1000 respondents or more.
+    One of the factors that were mentioned to be included when estimating the sample size was the targeted population size. When looking at the population size for this research, there is no good way to estimate that number because it includes all people with a smartphone worldwide. 
 
-    Because of the lack of control of the diversity of the respondents, there is likely to be some data properties that have a higher representation that others. Therefore it is important to control the data collected during the spring. If it occurs that a subpopulation is overrepresented, it is desired to use the strategy for smoothing the data from Subsection~\ref{sec:response}. The data collected should never be manipulated, and in a situation where there is lack of respondents from a subgroup, the only thing that I can do is to contact networks where there is a higher possibility to reached the subgroup that is underrepresented in the data.
+    The greater the accuracy required in my claim that my sample size represent the whole population adequately; the larger your sample size needs to be. Statisticians have produced tables that correlate population size against the sample size required for the required level of confidence and accuracy. Researchers generally work with a confidence level at 95\% and an accuracy range of +/- 3 \%. In Table~\ref{tab:sampleSize} there is a recommended sample size for a survey (using 95\% confidence interval and +/- 3\% accuracy range) estimated by the targeted population size \cite{empiriske}.  
 
-    The total sample size is quite high, but should be manageable. If the total amount of 1000 respondents is not reached, a minimum number of respondents should be accepted at 500. In the analysis it will be hard to make any conclusions if the total number of respondents is too low.  The Internet offers researchers the possibility of accessing many people across the world cheaply and quickly. Not everyone have Internet access, and that need to be considered in the design.
+      \begin{table}[H]
+        \begin{tabular}{| p{5cm} | p{5cm} |}
+          \hline
+          {\bf Taget Population Size} & {\bf Required sample size} \\ \hline
+          50 & 47 \\
+          5000 & 760 \\ 
+          100,000 & 888 \\
+          900,000 & 895 \\ 
+          $>$1,000,000 & 1000+ \\ \hline
+        \end{tabular}
+        \caption{Target population and sample size \cite{empiriske}}
+        \label{tab:sampleSize}
+      \end{table}
 
-    Since the sampling frame is wide, and the survey is going to be distributed with a self-selection sampling strategy over the Internet, it is still important to provide some level of control of the respondents. In the next section, we will look at some response strategy.
+    As we can see in Table~\ref{tab:sampleSize}, the sample size does not increase at the same rate as the target population. When looking at all people that owns a mobile phone worldwide, we can argue that the targeted population size is greater than 1,000,000, and we therefore need a sample size of at least 1000. It would be desirable to get a sample size bigger than 1000, but due to the time frame of this research, a sample size of 1000 would be good enough to get statistically significant results.
+
+    Since the sampling size is quite hight, and the survey is going to be distributed with a self-selection sampling strategy over the Internet, it is still important to provide some level of control of the respondents. The lack of control of the respondents, there is likely to be some data properties that have a higher representation that others. Therefore, it is important to control the data collected during the spring. If it occurs that a subpopulation is overrepresented, it is desired to use the strategy for smoothing the data from Subsection. The data collected should never be manipulated. In a situation where there is lack of respondents from a subgroup, the only thing that I can do is to contact networks where there is a higher probability to reach the subgroup that is underrepresented in the sample. Of course, when using such a strategy, it might introduce some bias because I then influence the sample. Such an approach should only be used when there is lacking a number of respondents from a subgroup for getting statistically significant results. If using such a strategy, it should be highlighted in the results how I did it, as well as discuss how it might have impacted the results. 
+
+    In the next section, we will look at some strategies for responses from different subgroups that may be underrepresented when using non-probability sampling with a self-selection technique. 
 
     \subsection{Response Rate and Non-responses} \label{sec:response}
 

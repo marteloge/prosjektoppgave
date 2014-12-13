@@ -1,16 +1,26 @@
 \section{Data Collection} \label{sec:datacollection}
-
+  
+  This section will include information about the data collection process.
 
   \subsection{Form of Administration} \label{sec:formodadministration}
 
-  This questionnaire is a``Self-administered'', meaning that volunteered respondents completes the questionnaire without me being present. This choice is made due time saved, as well as getting enough data. A ``researcher-administrated'' questionnaire would simply be too time consuming and there is a chance that the required amount of data would not be reached. 
+  There is two different ways of administrate the questionnaire, ``self-administered'' and ``researcher-administered''. This questionnaire is a``Self-administered'', meaning that volunteered respondents complete the questionnaire without me being present. This choice is made due time saved, as well as getting enough data. A ``researcher-administrated'' questionnaire would simply be too time-consuming and there is a chance that the required sample size would not be achieved. 
     
-  When sending the same questionnaire over the Internet, it eliminates the risk of introducing bias by asking the respondents the questions in a different manner, and bias introduced by tone and body language. When collecting passwords, the questionnaire needs to be untraceable back to the respondents due to ethical considerations. A questionnaire over the Internet would make it easier for respondents to share patterns, but it also introduce the problem with the control of the responses and its reliability. The questionnaire needs to be carefully designed in order to reduce possible biases. To get the data in a standardized format, the questionnaire will include closed-question and will therefore generate quantitative data. The asked questions will further be described in the next subsection
+  When sending the same questionnaire over the Internet, it eliminates the risk of introducing bias by asking the respondents the questions in a different manner, and bias introduced by tone and body language. When collecting passwords, the questionnaire needs to be untraceable back to the respondents due to ethical considerations. A questionnaire over the Internet would make it easier for respondents to share patterns, but it also introduce the problem with the control of the responses and its reliability. The questionnaire needs to be carefully designed in order to reduce possible biases. To get the data in a standardized format, the questionnaire will include closed-question and will generate quantitative data. The asked questions will further be described in the next subsection
 
   \subsection{Question and Responses}\label{sec:questions}
 
+  In this section, we will look further into the questions added to the questionnaire as well as the responses to each question. Further discussion of the questions and responses is included in Section~\ref{sec:wireframes}.
+  The questionnaire is divided into two parts: pattern selection and respondent information. 
+
     \subsection*{Pattern selection}
-    The pattern selection is divided into 3 different tasks. The reason for doing this is getting more data, as well as setting a pattern into a security setting with different security levels. {\it First}, there is a need for a large scale of data, and by asking the respondents to make three different patterns gives this research more data to analyze. {\it Second}, the pattens now adds a new dimension by categorizing the patterns into three security categories: low, medium, and high. 
+    The pattern selection is divided into three different tasks. The reason for doing this is getting more data, as well as obtaining patterns with various security levels. {\it First}, there is a need for a large sample, and by asking the respondents to make three different patterns gives this research more patterns to analyze. {\it Second}, the patterns now add a new dimension by categorizing the patterns into three security levels: low, medium, and high. {\it Third}, it reduces the risk of people making pattern without adding an effort into the pattern creation. This research has some concerns with the possibility that users might be making patterns that they normally wouldn't use in the real world. By adding a context for the patterns that is being created, it might reduce some of the effortless attempts that some respondents would do. 
+
+    When coping with the possibility of users selecting patterns without an effort to make real patterns, there is a possibility to add a sequence at the end of the questionnaire where the respondents have to reenter their selected patterns. The problem with such an approach is that it might be likely that the respondents make three equal patterns that are too easy to guess because they are afraid to not remember them in the end. Therefore, this questionnaire will not include any reentering of the patterns.
+
+    When asking all users with a smartphone, there might be users that never have used the Android Unlock Pattern before. It is therefore added the possibility to enter a training mode before entering the patterns. For experienced users, they can skip the training mode and go directly to the pattern creation. 
+
+    The respondents are asked for making three patterns: 
 
       {\bf P1:} {\it Make pattern to protect one of your shopping accounts}
 
@@ -18,8 +28,12 @@
 
       {\bf P3:} {\it Make a pattern to protect your banking account}
 
-  \clearpage
+    \clearpage
     \subsection*{Information about the respondents} 
+
+    When the respondents created three various patterns, the respondents are asked different questions about their human properties, as well as some information about their smartphones. 
+
+    The ordering of the questions is arranged according to the importance of the questions. This ordering is added in case if some respondents choose to terminate the questionnaire before completion of the questionnaire. The questions are selected from the review of human properties (Section~\ref{sec:datarequirements}), as well as some questions that includes information about the smartphone used for answering the questionnaire. Further discussion of each question will be included in Section~\ref{sec:wireframes}.
 
     \begin{longtable}{| p{1cm} | m{6.5cm} | m{3.5cm} |}
       \hline
@@ -104,45 +118,47 @@
         \item Other
       \end{itemize} \\ \hline
     \caption{Questions included in the questionnaire}
+    \label{tab:questions}
     \end{longtable}
 
   \clearpage
   \subsection{Layout and Structure}\label{sec:layout}
 
-    Before the questionnaire starts there is given some information about the research, the use of the collected data, and privacy concerns. After the information, the respondent will be given the possibility to practice before entering the patterns. This is optional, and is added for users that is not familiar with the Android Unlock Pattern.
+  In this section, we will describe the layout and structure of the questionnaire. The questionnaire is divided into four parts: introduction, pattern training, pattern creation and collection of information about the respondents and device used. 
 
-    After the training, the respondents will be asked to make a pattern for three different categories of security risks. It is a concern that respondents could make patterns that is done quickly without any thoughts. When asking a person to make a ``complex pattern'', people tend to overcompensate and choose rather complicated passwords. This behavior is well known in psychology as ``priming''. By overcompensating and choosing rater more complicated patterns than probably would appear ``in the wild'' would introduce bias in the data because the overcompensated password is not representative. By asking people to make three different patterns, we get a overview of the complexity without directly asking the users to make a password that is hard to guess.
+    \subsubsection*{Introduction}
+    Before the questionnaire starts there is given some information about the research, the use of the collected data, contact information, and privacy concerns. The information is an important part of the questionnaire because it can be essential to get people to participate. It needs to provide sufficient information about the background of the research. The contact Information is necessary because if any respondents have any questions, or unsure if they want to participate, they can see that the contact information is connected to NTNU. 
 
-    After the patterns is entered, the background and demographics of the users will be asked for. There is a thought behind the ordering of the different parts of the questionnaire. {\it First}, people might stop before finishing the questionnaire, and is therefore desired to collect the patterns first. {\it Second}, the additional data collected might impact the users choice in patterns. For example, when asking a person about their hand size, or the size of the screen, the respondent might be aware that this properties will be impacting their patterns. A such observation form the user could introduce bias in the data.
+    \subsubsection*{Pattern training}
+    After the information about the research, the respondent will be given the possibility to practice before entering the patterns. The training is optional, and experienced respondents can skip the training and is  them directly to the pattern creation.
 
-    This is will be the structure of the questionnaire:
+    \subsubsection*{Pattern creation}
+    After the information and training, the respondents will be asked to make a pattern for three different categories of security risks.
 
-    \begin{enumerate}
-      \item {\bf Introduction}
-      \item {\bf Pattern training}
-      \item {\bf Selection of Pattens}
-      \item {\bf Background and Demographics}
-    \end{enumerate}
+    It is a concern that respondents could make patterns that are done quickly without any thoughts. When asking a person to make a ``complex pattern'', people tend to overcompensate and choose rather complicated passwords. This behavior is well known in psychology as ``priming''. By overcompensating and choosing more complex patterns than probably would appear ``in the wild'', would introduce bias in the data because the overcompensated password is not representative. By asking people to make three different patterns, we get an overview of the complexity without directly asking the users to make a password that is hard to guess.
 
-  \subsection{Validity and Reliability}\label{sec:validityandreliability}
+    One concern with asking the users to create the patterns in a predefined order is that it might introduce bias in the data. When a respondent is making the patterns the order might affect how they make the patterns. For example, when a respondent creates a pattern for a shopping account, they may start out with an easy pattern because they might categorize it as a a lower security risk, for example, the banking account. To be sure that the ordering is not introducing bias, we can use a method called a ``Latin Square''. A Latin square is a table filled with n different symbols in such a way that each symbol occurs exactly once in each row and exactly once in each column.
 
-    {\bf Content validity}
+    We use a Latin Square for ensuring that the ordering do not impact the respondent's choice of patterns. In practice, different respondents will be answering the same questions, but in a different order. The answers with a different ordering will be compared to see if the ordering had any impact on the results. 
 
-    {\bf Construct validity}
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{| m{1cm} | m{1cm} | m{1cm} |}
+        \hline
+        P1 & P2 & P3 \\ \hline
+        P2 & P3 & P1 \\ \hline
+        P3 & P1 & P2 \\ \hline
+      \end{tabular}
+      \caption{Latin Square}
+    \end{table}
 
-    {\bf Reliability}
+    \subsubsection*{Information about the respondents and the device used}
+    After the patterns are entered, the background and demographics of the users will be asked. There is a thought behind the ordering of the different parts of the questionnaire. {\it First}, people might stop before finishing the questionnaire, and is therefore desired to collect the patterns first. {\it Second}, the additional data collected might impact the user's choice in patterns. For example, when asking a person about their hand size or the size of the screen, the respondent might be aware that these properties will be impacting their choice of patterns.
 
-  
 
     %Forstår de hva som skal svares på? Ville de svart på denne undersøkelsen? Er etiske aspekter brutt? Vil det ta for lang tid?
 
- 
-
-  
-
-  
-
-% Bør si noe om vanskeligheten med å samle inn password og forskjellen på å samle inn lekasje of faktiske passord.
-% Hva bruker man mobilen til? Bank, facebook, mail, jobb, etc? Kan man se en sammenheng mellom passord og bruk av mobil. 
-% Lage passord for forskjellige risikokategorier.
+    % Bør si noe om vanskeligheten med å samle inn password og forskjellen på å samle inn lekasje of faktiske passord.
+    % Hva bruker man mobilen til? Bank, facebook, mail, jobb, etc? Kan man se en sammenheng mellom passord og bruk av mobil. 
+    % Lage passord for forskjellige risikokategorier.
 
