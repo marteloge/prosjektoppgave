@@ -1,7 +1,18 @@
 \section{Wireframes}
 \label{sec:wireframes}
 
+
+  \subsection{Usability}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{pics/usability.png}
+    \caption[ISO9241 - Usability]{ISO9241 - Usability \cite{ISO9241}}
+    \label{fig:usability}
+  \end{figure}
+
   \subsection{Design choices}
+    
     \begin{wrapfigure}{l}{0.35\textwidth}
       \centering
       \vspace{-5pt}
@@ -10,14 +21,11 @@
       \label{fig:wireframe1}
     \end{wrapfigure}
     
-  In this section, there will be a description of how to build a system for data collection. The questionnaire will be created as a web application that will be easy to distribute over the Internet. In this report, the design of the system will be described in detail. The implementation will be finished next semester and will, therefore, not be a product included in this project. During this project, I have spent much time designing the look of the system, as well as the structure. The respondents are going to answer the questionnaire on a smartphone; there is many usability requirements that must be considered. First, the system must be easy to learn. When the system should be easy to learn, the respondents should be familiar with icons and elements used in order to be able to complete the questionnaire. Second, the systems should be efficient. When answering on a mobile phone, this should be considered as essential requirements to fulfill. If the questionnaire takes too long time, it is possible that many people will not complete or even want to start.
+  In this section, there will be a description of how to build a system for data collection. The questionnaire will be created as a web application that will be easy to distribute over the Internet. In this report, the design of the system will be described in detail. The implementation will be finished next semester and will, therefore, not be a product included in this project. During this project, I have spent much time designing the look of the system, as well as the structure. The respondents are going to answer the questionnaire on a smartphone; there is many usability requirements that must be considered \cite{ISO9241}. First, the system must be easy to learn. When the system should be easy to learn, the respondents should be familiar with icons and elements used in order to be able to complete the questionnaire. Second, the systems should be efficient. When answering on a mobile phone, this should be considered as essential requirements to fulfill. If the questionnaire takes too long time, it is possible that many people will not complete or even want to start.
 
   To support efficiency, there is added images that easily can be interpreted. Even if the respondent is not fluent in English, the respondent should be able to understand the questions by looking at the icons used. At this point, it is not decided if it is needed to add support for other languages. There is going to be conducted two pilot tests of the wireframes to ensure the two selected usability attributes learnability and efficiency. The first test will focus on the time used for completion of the questionnaire, and the other test will remove the questions in order to test if the icons is understandable. The test will further be described in Section~\ref{sec:pretest}. The new test will be conducted when the system is implemented, and will be carried out and documented next semester.
 
-
-
-  \todo{Legge til kilder på usability}
-  \todo{What is a wireframe?}
+  \todo{Flytte beskrivelse av usability til sec før. }
 
   Figure~\ref{fig:wireframe1} is the first screen that the respondents meet when they access the questionnaire. This includes a description of the research, information about the questionnaire, and privacy concerns. This is the first part that the respondents meet, so it is important that the respondent feel confident. The contact information provides a creditability to the questionnaire, so the respondents can feel save that information is handled correctly accordingly to the information that is given. It also allows the respondents to ask questions if they have any questions or want to Google the researcher sending out the questionnaire. A questionnaire asking for personal information might seem scary for some respondents, it is then comforting to be able to see who this person is.
 
@@ -181,13 +189,60 @@
       \caption{Wireframes}
     \end{figure}
 
-  \subsection{Pre-test and Pilot}\label{sec:pretest}
-    When the questionnaire is ready, I need to perform a questionnaire to evaluate several aspects. First, I need to figure out if the respondents understand the questions stated in the questionnaire. This can cause a lot of bias in the data if the questions asked are ambiguous. Second, the time needed for completion of the questionnaire can not be too long. If the questionnaire takes too long to complete, there is less likely that people want to spend their time completing the questionnaire. It is stated that I need a sample size of 1000 for getting representative results for the analysis. At the same time, there is needed a lot of data to be able to make see patterns in the data. Therefore, it needs to be a balance between questions and data collected, and time of completion. 
+  \subsection{Usability Test}\label{sec:pretest}
+  Before sending out the questionnaire, there needs to be performed a usability test on the questionnaire. {\it First}, I need to figure out if the respondents understand the questions stated in the questionnaire. This can cause bias in the data if the questions asked are ambiguous. {\it Second}, the time needed for completion of the questionnaire can not be too long. If the questionnaire takes too long to complete, there is less likely that people want to spend their time completing the questionnaire. At the same time, there is required a lot of data to be able to make see patterns in the data. Therefore, it needs to be a balance between questions and data collected and time of completion.
 
-    There is a need to do some quality testing before distributing the questionnaire over the Internet. A pen and paper test will be tested to check the wording of the questions as well as getting feedback of the amount of information that is asked for. It is also interesting to ask questions about the ethical aspects of the data collection. If some of the test persons feels that their privacy is leaked by answering the questionnaire, the questions might needs to be evaluated for the final questionnaire. 
-    This test will also be conducted in the following spring when the system for data collection is up and running. 
+  There is a need to do some quality testing before distributing the questionnaire over the Internet. A pen and paper test will be tested to check whether the wording of the questions as well as getting feedback of the amount of information asked. It is also interesting to ask questions about the ethical aspects of the data collection. If some of the test persons feels that their privacy is leaked by answering the questionnaire, the questions might need to be reevaluated.
 
-    \todo{En test for tid og en test for ikoner}
+  In this report, there will be conducted two usability tests based on using printed wireframes. As stated in Section~\ref{sec:wireframes}, we want to measure the usability of the questionnaire in terms of effectiveness (time used for completion) and learnability (how easily the respondents understand what to do without help).
+
+  \subsubsection*{Setup}
+
+  For testing the usability of the system, it was conducted two different tests. In both tests, I was acting as the mobile phone, and the participants interacted with the prototype as it was a real smartphone. Whenever they selected an action, I simulated what the system should do.
+  Before the test started, it was given some information about the research.  
+  
+  Test 1 was testing the overall usability by measuring the efficiency, effectiveness, and satisfaction (Figure~\ref{fig:usability}) of the prototype. The corresponding usability measures used was time on task, number of errors and completion rate, and subjective satisfaction. Figure~\ref{fig:test1} is showing some of the wireframes printed on paper that was used during the test. 
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.08]{pics/test1.png}
+      \caption{Usability test 1}
+      \label{fig:test1}
+    \end{figure}
+
+  In the second test, it only tested the effectiveness (measured in number of errors) by only looking at the icons. When showing the icons to the participant, the actual question was covered. The students that participated in the test was supposed to guess what was asked for and select their answer by only looking at the icons. When conducting this test, the goal was to be able to see if the icons was understandable. When sending out the questionnaire, it is important that respondent that are not fluent in English are able to answer the questions without be able to understand all the English words. It is also useful for respondents to be able to use the text and the icons together in order to understand the questions. Figure~\ref{fig:test2} is showing an image from test 2, where the question is covered. 
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.05]{pics/test2.png}
+      \caption{Usability test 2}
+      \label{fig:test2}
+    \end{figure}
+
+  \subsubsection*{Results}
+
+  For testing the prototype I contacted 5 girls and 5 boys (age from 20-24) from the university, resulting in 5 participants for each test. This is a small number of participants, and is not representing the whole population. The main goal was to get some feedback on the wireframes from Section~\ref{fig:wireframes}. The feedback from the participants will be included in the next version of the prototype. The new prototype will be tested an implemented next semester. 
+
+  In test 1, all the wireframes was used, and was demonstrated in the same order as Figure~\ref{fig:wireframes}. The participants were explained that the test did not test their knowledge, rather the systems and its design. If they ever felt uncomfortable, they were also explained that they could quit the test whenever they wanted. Before they started on the questionnaire, they were given information about the research, their right to stay anonymous, and the purpose of the research. The participants started when they pressed ``Start'' as illustrated in Figure~\ref{fig:wireframe1}. During the test the participants commented on some part of the test.
+
+  {\bf Comment on Figure~\ref{fig:wireframe20}}: {\it I study, but I have not finished my studies. Should I press yes?}. All of the respondents was unsure whether to select yes or no on the question about their experience with IT and security. All the participants were IT-students, and all was unsure if the word ``studied'' was fitting their situation since they still were students. Most of the students chose to select ``no'' as their answers, but I would probably categorize all of them in a group that have experience with IT and/or security. This question should be redesigned in order to avoid respondents to get in the same position. 
+
+  {\bf Comment on Figure~\ref{fig:wireframe12}}: ``What is a do you mean by reading and writing orientation?''. One of the students were unsure what this question asked for. The student guessed that the question asked for the direction that he used to write, but he got unsure when he red the alternative ``top-to-bottom'' because that alternative didn't relate to him. He then clicked on the information button, and I explained what the different reading orientation was.
+
+
+
+  After the participants completed the question, I asked a set questions:
+
+  \begin{itemize}
+    \item 
+  \end{itemize}
+
+  In test 2, the respondents was challenged with the wireframes that contained icons. They guessed what was asked for and then selected they answer with an explanation of why they did so. All the five respondents (three girls and two boys) managed to interpret the icons and guess most of the questions. 
+  There was one participant that guessed that wireframe~\ref{fig:wireframe16} was asking if they used the Android scheme. It is quite close, but not the exact question. I don't see this as a problem because all the respondents from test 1 manage to interpret the question correctly.
+
+  \subsubsection*{Redesign}
+
+  Navigation
 
   \subsection{Validity and Reliability}\label{sec:validityandreliability}
 
