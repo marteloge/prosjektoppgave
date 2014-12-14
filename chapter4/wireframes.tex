@@ -12,6 +12,8 @@
   \end{figure}
 
   \subsection{Design choices}
+
+
     
     \begin{wrapfigure}{l}{0.35\textwidth}
       \centering
@@ -26,6 +28,14 @@
   To support efficiency, there is added images that easily can be interpreted. Even if the respondent is not fluent in English, the respondent should be able to understand the questions by looking at the icons used. At this point, it is not decided if it is needed to add support for other languages. There is going to be conducted two pilot tests of the wireframes to ensure the two selected usability attributes learnability and efficiency. The first test will focus on the time used for completion of the questionnaire, and the other test will remove the questions in order to test if the icons is understandable. The test will further be described in Section~\ref{sec:pretest}. The new test will be conducted when the system is implemented, and will be carried out and documented next semester.
 
   \todo{Flytte beskrivelse av usability til sec før. }
+
+  In the wireframes there is used different visual elements for navigation, information, and navigation. 
+  % \begin{figure}
+  %   \centering
+  %   \subfigure{
+  %     \includegraphics[]{}
+  %   }
+  % \end{figure}
 
   Figure~\ref{fig:wireframe1} is the first screen that the respondents meet when they access the questionnaire. This includes a description of the research, information about the questionnaire, and privacy concerns. This is the first part that the respondents meet, so it is important that the respondent feel confident. The contact information provides a creditability to the questionnaire, so the respondents can feel save that information is handled correctly accordingly to the information that is given. It also allows the respondents to ask questions if they have any questions or want to Google the researcher sending out the questionnaire. A questionnaire asking for personal information might seem scary for some respondents, it is then comforting to be able to see who this person is.
 
@@ -221,28 +231,31 @@
 
   \subsubsection*{Results}
 
-  For testing the prototype I contacted 5 girls and 5 boys (age from 20-24) from the university, resulting in 5 participants for each test. This is a small number of participants, and is not representing the whole population. The main goal was to get some feedback on the wireframes from Section~\ref{fig:wireframes}. The feedback from the participants will be included in the next version of the prototype. The new prototype will be tested an implemented next semester. 
+  For testing the prototype, I contacted five girls and five boys (age from 20-24) from the university, resulting in 5 participants in each test. This is a small number of participants and does only represent a small part of the population. The primary goal was to get some feedback on the wireframes from Section~\ref{fig:wireframes}. The participants were explained that the test did not test their knowledge, rather the systems and its design. If they ever felt uncomfortable, they were also told that they could quit the test whenever they wanted. The feedback from the participants will be included in the next version of the prototype. The new prototype will be tested and implemented next semester.
 
-  In test 1, all the wireframes was used, and was demonstrated in the same order as Figure~\ref{fig:wireframes}. The participants were explained that the test did not test their knowledge, rather the systems and its design. If they ever felt uncomfortable, they were also explained that they could quit the test whenever they wanted. Before they started on the questionnaire, they were given information about the research, their right to stay anonymous, and the purpose of the research. The participants started when they pressed ``Start'' as illustrated in Figure~\ref{fig:wireframe1}. During the test the participants commented on some part of the test.
+  In test 1, all the wireframes were used and was demonstrated in the same order as Figure~\ref{fig:wireframes}. Before they started on the questionnaire, they were given information about the research, their right to stay anonymous, and the purpose of the research. The participants began when they pressed ``Start'' as illustrated in Figure~\ref{fig:wireframe1}. During the test, the participants commented on some part of the test.
 
-  {\bf Comment on Figure~\ref{fig:wireframe20}}: {\it I study, but I have not finished my studies. Should I press yes?}. All of the respondents was unsure whether to select yes or no on the question about their experience with IT and security. All the participants were IT-students, and all was unsure if the word ``studied'' was fitting their situation since they still were students. Most of the students chose to select ``no'' as their answers, but I would probably categorize all of them in a group that have experience with IT and/or security. This question should be redesigned in order to avoid respondents to get in the same position. 
+  {\bf Comment on Figure~\ref{fig:wireframe20}}: {\it "I study, but I have not finished my studies. Should I press yes?"}. All of the respondents was unsure whether to select "yes" or "no" in order to answer the question about their experience with IT and security. All the participants were IT-students, and all was unsure if the word ``studied'' was fitting their situation since they still were students. Most of the students chose to select ``no'' as their answers, but I would probably categorize all of them in a group experienced with IT and/or security. This question should be rephrased in order to avoid respondents to get in the same position.
 
-  {\bf Comment on Figure~\ref{fig:wireframe12}}: ``What is a do you mean by reading and writing orientation?''. One of the students were unsure what this question asked for. The student guessed that the question asked for the direction that he used to write, but he got unsure when he red the alternative ``top-to-bottom'' because that alternative didn't relate to him. He then clicked on the information button, and I explained what the different reading orientation was.
+  {\bf Comment on Figure~\ref{fig:wireframe12}}: {\it "What do you mean by reading and writing orientation?"}. One of the students were unsure what the question asked. The student guessed that the question posed for the direction that he used to write, but he got unsure when he read the ``top-to-bottom'' alternative because he could not relate to the alternative. He then clicked on the information button, and I explained what the different reading orientation was.
 
+  {\bf Comment on the progress bar}: The progress bar in the prototype is very simple, and do not indicate how many questions that is left. Only one participant commented on this. He would like to see exactly how many questions that was answered and how many questions that is left. He suggested that he it could be used dots that are often used together with swipe navigation. He also added that this probably would be hard to implement because of the number of questions. An alternative suggestion was to remove the information icon next to the question and replace it with the number of questions answers (for example 2/12, two out of twelve questions answered).
 
+  {\bf Comment about the pattern creation}: {\it "I would like to create a pattern for the smartphone first because I wanted to use the pattern from my own smartphone because that is something I am familiar with"}.
 
   After the participants completed the question, I asked a set questions:
 
-  \begin{itemize}
-    \item 
-  \end{itemize}
+  {\bf Question 1 - Navigation}: All the participants were asked how they felt about the flow and navigation in the system. The reason this question is asked is because the prototype has two arrows that are indicating how to get to the next question. On mobile devices, it is desirable to have the least possible amount of clicks in order to use less time. Pressing the same button to go to the next question can for some users be annoying. The arrows are added to the prototype because it is hard to simulate automatic animation or swipe navigation on paper. The participants got a chance to express how they would like the navigation to be, and how they would expect it to work. All the respondents would like the questions to navigate automatically when they selected their answers. Some of the participants commented that they wanted the icons to change color, and then see an animation of the automatic animation. Some of the participants that wanted the automatic navigation added the comment that they wanted to be able to go back if they chose the wrong answer. So if the automatic navigation was added, then there was a need to be able to go back, so they did not lose control. Two of the respondents wanted the questionnaire to support swipe navigation because they expect that this is how website navigation works.
 
-  In test 2, the respondents was challenged with the wireframes that contained icons. They guessed what was asked for and then selected they answer with an explanation of why they did so. All the five respondents (three girls and two boys) managed to interpret the icons and guess most of the questions. 
-  There was one participant that guessed that wireframe~\ref{fig:wireframe16} was asking if they used the Android scheme. It is quite close, but not the exact question. I don't see this as a problem because all the respondents from test 1 manage to interpret the question correctly.
+  {\bf Question 2 - Trustworthiness}: All the respondents were asked if they felt confident when they answered the questionnaire. Asking people to give away patterns might result in loosing some respondents because they do not feel confident. It is, therefore, important to provide enough information about the research and how the data is going to be used. The trustworthiness is important to obtain from the respondents already in the introduction. 
+
+  In test 2, the respondents were challenged with the wireframes that contained icons. They guessed what was asked for and then selected they answer with an explanation of why they did so. All the five respondents (three girls and two boys) managed to interpret the icons and guess most of the questions. There was one participant that guessed that wireframe~\ref{fig:wireframe16} was asking if they used the Android scheme. It is quite close, but not the exact question. I do not see this as a problem because all the respondents from test 1 manage to interpret the question correctly.
 
   \subsubsection*{Redesign}
 
   Navigation
+
+  The order of the patterns
 
   \subsection{Validity and Reliability}\label{sec:validityandreliability}
 
