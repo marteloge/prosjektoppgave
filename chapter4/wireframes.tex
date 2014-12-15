@@ -1,8 +1,15 @@
-\section{Wireframes}
+\section{Prototype - System for Data Collection}
 \label{sec:wireframes}
 
+  This section will provide a proposed system for data collection. First we will look at a framework for evaluating the usability of the system for data collection in Section~\ref{sec:usability}. The design choices and the wireframes for the system is desctibed and illustrated in Section~\ref{sec:designChoices}. 
 
-  \subsection{Usability}
+  \subsection{Usability} \label{sec:usability}
+
+  When creating a system it is important to evaluate its usability. This section will provide a framework to include when designing the a prototype for data collection. The prototype is further the described and illustrated in the next section. 
+
+  Usability is defined as ``the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use'' \cite{ISO9241}. Figure~\ref{fig:usability} is showing how we are going to measure the usability of the prototype created for data collection.
+
+  The first level is containing the usability measures effectiveness, efficiency, and satisfaction. The first usability measure, {\it efficiency}, is defined as ``resources expended in relation to the accuracy and completeness with which users achieve goals'' and is measured with the usability metric time on task. The second usability measure, {\it effectiveness}, is defines as ``the accuracy and completeness with which users achieve specified goals'' and is measured with the usability metrics number of errors and completion rate. The last usability measure, {\it satisfaction}, is defined as ``freedom from discomfort, and positive attitudes towards the use of the product. '' and is measured by the usability metric of subjective satisfaction
 
   \begin{figure}[H]
     \centering
@@ -11,19 +18,19 @@
     \label{fig:usability}
   \end{figure}
 
-  \subsection{Design choices}
+  The prototype that is being evaluated is a prototype for data collection, e.g the system. The user is defines as ``the persons who interact with the product'' and is the respondents that answers the survey through the system. The goal of the system is to collect patterns and information about the users. The task that the respondents needs to perform is to provide their answers for the questions asked in the questionnaire (Section~\ref{sec:questions}). The product, for which usability is to be evaluated, is the prototype for the software being implemented on mobile devices.  
 
-
+  \subsection{Design choices} \label{sec:designChoices}
     
     \begin{wrapfigure}{l}{0.35\textwidth}
       \centering
       \vspace{-5pt}
       \includegraphics[scale=0.40]{screens/v3/mobile/mobile1-1.png}
-      \caption{Introduction}
+      \caption{Introduction screen}
       \label{fig:wireframe1}
     \end{wrapfigure}
     
-  In this section, there will be a description of how to build a system for data collection. The questionnaire will be created as a web application that will be easy to distribute over the Internet. In this report, the design of the system will be described in detail. The implementation will be finished next semester and will, therefore, not be a product included in this project. During this project, I have spent much time designing the look of the system, as well as the structure. The respondents are going to answer the questionnaire on a smartphone; there is many usability requirements that must be considered \cite{ISO9241}. First, the system must be easy to learn. When the system should be easy to learn, the respondents should be familiar with icons and elements used in order to be able to complete the questionnaire. Second, the systems should be efficient. When answering on a mobile phone, this should be considered as essential requirements to fulfill. If the questionnaire takes too long time, it is possible that many people will not complete or even want to start.
+  In this section, there will be a description of how to build a system for data collection. The questionnaire will be created as a web application that will be easy to distribute over the Internet. In this report, the design of the system will be described in detail. The implementation will be finished next semester and will, therefore, not be a product included in this project. During this project, I have spent much time designing the look of the system, as well as the structure. The respondents are going to answer the questionnaire on a smartphone; there is many usability requirements that must be considered (Figure~\ref{fig:usability}). First, the system must be easy to learn. When the system should be easy to learn, the respondents should be familiar with icons and elements used in order to be able to complete the questionnaire. Second, the systems should be efficient. When answering on a mobile phone, this should be considered as essential requirements to fulfill. If the questionnaire takes too long time, it is possible that many people will not complete or even want to start.
 
   To support efficiency, there is added images that easily can be interpreted. Even if the respondent is not fluent in English, the respondent should be able to understand the questions by looking at the icons used. At this point, it is not decided if it is needed to add support for other languages. There is going to be conducted two pilot tests of the wireframes to ensure the two selected usability attributes learnability and efficiency. The first test will focus on the time used for completion of the questionnaire, and the other test will remove the questions in order to test if the icons is understandable. The test will further be described in Section~\ref{sec:pretest}. The new test will be conducted when the system is implemented, and will be carried out and documented next semester.
 
@@ -249,13 +256,18 @@
 
   {\bf Question 2 - Trustworthiness}: All the respondents were asked if they felt confident when they answered the questionnaire. Asking people to give away patterns might result in loosing some respondents because they do not feel confident. It is, therefore, important to provide enough information about the research and how the data is going to be used. The trustworthiness is important to obtain from the respondents already in the introduction. 
 
-  In test 2, the respondents were challenged with the wireframes that contained icons. They guessed what was asked for and then selected they answer with an explanation of why they did so. All the five respondents (three girls and two boys) managed to interpret the icons and guess most of the questions. There was one participant that guessed that wireframe~\ref{fig:wireframe16} was asking if they used the Android scheme. It is quite close, but not the exact question. I do not see this as a problem because all the respondents from test 1 manage to interpret the question correctly.
+  In test 2, the respondents were challenged with the wireframes that contained icons. They guessed what was asked for and then selected they answer with an explanation of why they did so. All the five respondents (three girls and two boys) managed to interpret the icons and guess most of the questions. There was one participant that guessed that the wireframe in Figure~\ref{fig:wireframe16} was asking if they used the Android scheme. It is quite close, but not the exact question. I do not see this as a problem because all the respondents from test 1 manage to interpret the question correctly. One drawback with this test is that the icons are quite simple, and some of them might not be good enough for the actual implementation. 
 
   \subsubsection*{Redesign}
 
-  Navigation
+  {\bf Navigation}: When implementing the system, it is a need to look at the navigation in a different way. In the test, all the participants was would like a faster way of navigation between the questions asked. One of the proposed solutions is to automatically go to the next questions with support for going back if they selected a wrong answer.
 
-  The order of the patterns
+  {\bf The order of the patterns:} One of the respondents requested that it was preferable that the mobile pattern was asked for first because that was a known environment for her. In the design it is stated that is preferable to give a random order of the patterns (using a Latin Square) in order to be able to see if the ordering is impacting the way the respondents create their patterns. This needs to be looked further into when implementing the system. If would be preferable to test whether it will give a higher level of real world data when asking for the mobile patterns first. 
+
+  {\bf Icons used:} The wireframes included icons that was found on the web, and some of the icons might need to be resigned in order to illustrate its corresponding value in a better way. One example is one of the alternatives in Fiqure~\ref{fig:wireframe18} that is trying to illustrate the ``slide-to-unlock'' locking mechanism (the second icon on the right side).
+
+  Beside the navigation and the order of the patterns, there was not provided any other feedback that needs to be redesigned before the implementation. The first version of the implemented system needs to go through a new usability test before starting the actual data collection. 
+
 
   \subsection{Validity and Reliability}\label{sec:validityandreliability}
 
