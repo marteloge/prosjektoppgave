@@ -31,7 +31,7 @@
     \clearpage
     \subsection*{Information about the respondents} 
 
-    When the respondents created three various patterns, the respondents are asked different questions about their human properties, as well as some information about their smartphones. 
+    When the respondents created three various patterns, the respondents are asked different questions about their human properties, as well as some information about their smartphones (Figure~\ref{tab:questions}). 
 
     The ordering of the questions is arranged according to the importance of the questions. This ordering is added in case if some respondents choose to terminate the questionnaire before completion of the questionnaire. The questions are selected from the review of human properties (Section~\ref{sec:datarequirements}), as well as some questions that includes information about the smartphone used for answering the questionnaire. Further discussion of each question will be included in Section~\ref{sec:wireframes}.
 
@@ -137,9 +137,9 @@
 
     It is a concern that respondents could make patterns that are done quickly without any thoughts. When asking a person to make a ``complex pattern'', people tend to overcompensate and choose rather complicated passwords. This behavior is well known in psychology as ``priming''. By overcompensating and choosing more complex patterns than probably would appear ``in the wild'', would introduce bias in the data because the overcompensated password is not representative. By asking people to make three different patterns, we get an overview of the complexity without directly asking the users to make a password that is hard to guess.
 
-    One concern with asking the users to create the patterns in a predefined order is that it might introduce bias in the data. When a respondent is making the patterns the order might affect how they make the patterns. For example, when a respondent creates a pattern for a shopping account, they may start out with an easy pattern because they might categorize it as a a lower security risk, for example, the banking account. To be sure that the ordering is not introducing bias, we can use a method called a ``Latin Square''. A Latin square is a table filled with n different symbols in such a way that each symbol occurs exactly once in each row and exactly once in each column.
+    One concern with asking the users to create the patterns in a predefined order is that it might introduce bias in the data. When a respondent is making the patterns the order might affect how they make the patterns. For example, when a respondent creates a pattern for a shopping account, they may start out with an easy pattern because they might categorize it as a a lower security risk, for example, the banking account. To be sure that the ordering is not introducing bias, we can use a method called a ``Latin Square'' (Figure~\ref{tab:latin}). A Latin square is a table filled with n different symbols in such a way that each symbol occurs exactly once in each row and exactly once in each column.
 
-    We use a Latin Square for ensuring that the ordering do not impact the respondent's choice of patterns. In practice, different respondents will be answering the same questions, but in a different order. The answers with a different ordering will be compared to see if the ordering had any impact on the results. 
+    We use a Latin Square for ensuring that the ordering do not impact the respondent's choice of patterns . In practice, different respondents will be answering the same questions, but in a different order. The answers with a different ordering will be compared to see if the ordering had any impact on the results. 
 
     \begin{table}[H]
       \centering
@@ -150,6 +150,7 @@
         P3 & P1 & P2 \\ \hline
       \end{tabular}
       \caption{Latin Square}
+      \label{tab:latin}
     \end{table}
 
     \subsubsection*{Information about the respondents and the device used}
