@@ -1,15 +1,15 @@
 \section{Prototype - System for Data Collection}
 \label{sec:wireframes}
 
-  This section will provide a proposed system for data collection. First we will look at a framework for evaluating the usability of the system for data collection in Section~\ref{sec:usability}. The design choices and the wireframes for the system is desctibed and illustrated in Section~\ref{sec:designChoices}. 
+  This section will provide a proposed system for data collection. First we will look at a framework for evaluating the usability of the system for data collection in Section~\ref{sec:usability}. The design choices and the wireframes for the system are described and illustrated in Section~\ref{sec:designChoices}.
 
   \subsection{Usability} \label{sec:usability}
 
-  When creating a system it is important to evaluate its usability. This section will provide a framework to include when designing the a prototype for data collection. The prototype is further the described and illustrated in the next section. 
+  When creating a system it is important to evaluate its usability. This section will provide a framework to include when designing the a prototype for data collection. The prototype is further the described and illustrated in the next section.
 
   Usability is defined as ``the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use'' \cite{ISO9241}. Figure~\ref{fig:usability} is showing how we are going to measure the usability of the prototype created for data collection.
 
-  The first level is containing the usability measures effectiveness, efficiency, and satisfaction. The first usability measure, {\it efficiency}, is defined as ``resources expended in relation to the accuracy and completeness with which users achieve goals'' and is measured with the usability metric time on task. The second usability measure, {\it effectiveness}, is defines as ``the accuracy and completeness with which users achieve specified goals'' and is measured with the usability metrics number of errors and completion rate. The last usability measure, {\it satisfaction}, is defined as ``freedom from discomfort, and positive attitudes towards the use of the product. '' and is measured by the usability metric of subjective satisfaction
+  The first level contains the usability measures effectiveness, efficiency, and satisfaction. The first usability measure, {\it efficiency}, is defined as ``resources expended in relation to the accuracy and completeness with which users achieve goals'' and is measured at the usability metric time on task. The second usability measure, {\it effectiveness}, is defined as ``the accuracy and completeness with which users achieve specified goals'' and is measured by the usability metrics number of errors and completion rate. The last usability measure, {\it satisfaction}, is defined as ``freedom from discomfort and positive attitudes towards the use of the product. '' and is measured by the usability metric of subjective satisfaction.
 
   \begin{figure}[H]
     \centering
@@ -18,10 +18,72 @@
     \label{fig:usability}
   \end{figure}
 
-  The prototype that is being evaluated is a prototype for data collection, e.g the system. The user is defines as ``the persons who interact with the product'' and is the respondents that answers the survey through the system. The goal of the system is to collect patterns and information about the users. The task that the respondents needs to perform is to provide their answers for the questions asked in the questionnaire (Section~\ref{sec:questions}). The product, for which usability is to be evaluated, is the prototype for the software being implemented on mobile devices.  
+  The prototype that is being evaluated is a prototype for data collection, e.g., the system. A user is defined as ``the persons who interact with the product'' and is the respondents that answer the survey through the system. The goal of the system is to collect patterns and information about the users. The task that the respondents needs to perform is to provide their answers to the questions asked in the questionnaire (Section~\ref{sec:questions}). The product, for which usability is to be evaluated, is the prototype for the software being implemented on mobile devices.  
 
   \subsection{Design choices} \label{sec:designChoices}
     
+  This section will be a proposal for how we can build a system for data collection. The system is a prototype of the questionnaire, and will be created as a web application that will be easy to distribute over the Internet. This is only a proposal for a system, and the final system will be implemented next semester. During this project, I have spent much time designing the look and feel of the system, as well as the structure and flow. The final system will only be running on a smartphone.
+
+  When designing a system for a mobile device, there is many usability requirements that must be considered (Figure~\ref{fig:usability}). {\it First}, the system must be efficient to use. When interacting with a small screen, I need to consider how the respondent can complete the questionnaire as fast as possible. The number of questions is quite high, therefore, we need to establish a flow that supports the user to complete the questionnaire quickly. It is not desired to get in a situation where many of the respondents quit before finishing the questionnaire because it takes too long time. {\it Second}, the system need to be effective in terms of the respondent's completion rate, avoiding too many errors. When considering the effectiveness of the systems, the system needs to support the respondents to be able to complete the questionnaire. {\it Third}, when using the system, the respondents need to get a positive attitude towards using the system. This usability requirement is often used to design systems that people want to use. For this system, it may not be a system that people find fun to use, but maybe I am able to design it in a way that people find it interesting. It should also be considered that the respondents feel confident while using the system. The system are collecting patterns created by the respondent, making the system be considered as trustworthy in order to reach a subjective satisfaction from the respondents.
+
+  When designing the system, the first issue was to design the response alternatives and how the respondents efficiently select their answer. For illustrating the answers, I picked out icons that I believe have a universal semantic meaning. By universal semantic meaning, I am talking about icons that people of different ages and different nationalities are familiar with. To illustrate one example, I used an image of a girl and a boy that is usually used on for example toilets (Figure~\ref{fig:boygirl}). When the user is asked for their gender, the two images are visualized as the possible alternatives instead of using text. Using too much text can take too much time to interpret, as well as it might keep the respondent attention throughout the whole questionnaire by using visual alternatives. I also believe that using universal icons support respondents that are not fluent in English to be able to answer the questionnaire.
+
+  \begin{figure}[H]
+    \centering
+    \subfigure[Male]{
+      \includegraphics[scale=0.5]{pics/male3.png}
+    }
+    \subfigure[Female]{
+      \includegraphics[scale=0.5]{pics/female3.png}
+    }
+    \caption{Icons used for illustrate the gender alternatives}
+    \label{fig:boygirl}
+  \end{figure}
+
+  Since this system only is supposed to be answered by a mobile device, the only input is coming from the touch screen. When the alternatives for each question are illustrated with icons, it is very easy for the respondents to select their answers by clicking on the icon. This helps the users to choose their answers quickly. Other aspects are the error rate and completion rate when looking at the usability measure effectiveness. The icons are easy to interact with from a touch screen. Other alternatives for the respondents to select their answer could be a list of textual alternatives. Such icons are called radio buttons and are often small. This can cause a situation where a person selects an answer that was not intended. I believe that using big icons can reduce the error rate, as well as raise the completion rate. This might also increase the subjective satisfaction because it may avoid an annoying situation where it takes too long time to interpret the alternatives, as well as avoid misplaced answers.
+
+  When answering a questionnaire it is important to indicate the progress, e.g. how far the respondent is from completion. This will support the satisfaction of the user. The progress can be illustrated with a progress bar or percentage/number of completed answers. If there is no indication of the progress, there is not added any ``award'' for answering each question. When the respondents can see the progress for each completed answer, they may feel that they were getting an award and therefore feeling satisfied.
+
+  The flow and structure are also an important aspect of usability. As stated, the respondents should be able to complete the questionnaire as fast as possible. When designing the wireframes for the prototype, it is hard to use flow elements that often is used on mobile devices. Such elements are animation and automatic progress. I have chosen to use arrows to support the flow and progress in the prototype because other features is hard to illustrate on paper. The flow is, therefore, added to further discussion in Chapter~\ref{chap:FutureWork}.
+
+  The next section will include the wireframes for the prototype. Figure~\ref{fig:navigation} is four of the icons used in the wireframes for the navigation and progress. Figure~\ref{fig:left} and Figure~\ref{fig:right} is the navigation elements used for progressing trough the system. Figure~\ref{fig:help} is an icon used if the respondent does not understand the question, and will provide extended information. Figure~\ref{fig:progress} is the progress bar indicating the progress in the questionnaire. 
+
+  \begin{figure}[H]
+    \centering
+    \subfigure[Navigate left]{
+      \includegraphics[scale=1]{pics/leftarrow5.png}
+      \label{fig:left}
+    }
+    \subfigure[Help]{
+      \includegraphics[scale=0.16]{pics/question48.png}
+      \label{fig:help}
+    }
+    \subfigure[Navigate right]{
+      \includegraphics[scale=1]{pics/rightarrow6.png}
+      \label{fig:right}
+    }
+    \subfigure[Progress]{
+      \includegraphics[scale=1.15]{pics/progress.png}
+      \label{fig:progress}
+    }
+    \caption{Navigation elements}
+    \label{fig:navigation}
+  \end{figure}
+
+  \subsection{Wireframing - Designing the prototype}
+
+    The prototype is created with a method called wireframing. A wireframe is low-fidelity prototype design that is sketchy and incomplete. Wireframes are easily constructed at a low cost and is made to avoid design issues when implementing the final system. The wireframes are the first proposal for the data collection system and will be used to test broad concepts of the prototype before the implementation.
+
+  The wireframes in the next section are at version 3 and have been through several reviews. First, I contacted created the first version by mocking up a design. {\it Second}, I contacted an assistant professor, Ole Andreas Alsos, from Department of Computer and Information Science at my university. He also teaching in a course named ``Prototyping Interactive Media'' (TDT4262). I scheduled a meeting with Ole Andreas to get feedback on the first version of the prototype. After the meeting I got much feedback on how to ask questions, as well as feedback on the overall design. This led to the version 2 of the prototype.
+
+  In December 8-10, my co-supervisor, Per Thorsheim, arranged a conference called ``PasswordsCon'' \cite{conference} at my university. At the conference, there were participants from all over the world; all with the same interest in passwords. For me, this was an excellent opportunity for me to talk to researchers and other people with an interest in passwords. Here I met one of the researchers that published the first large-scale user study on the Android Unlock Patten, Markus Dürmuth \cite{Uellenbeck}. I also met a researcher from Cambridge University, Jeunese Payne, that interested in passwords and psychology. Her main field of study is psychology, but she recently works on a project called ``Pico'' at Cambridge University that investigate a new authentication scheme. I sat down with both Markus and Jeunese, and explained my research and the selected research design that is described in this chapter. They both provided feedback on the wireframes and the overall research. At the same conference, I also presented this project thesis \cite{presentation}. The conference was an important event for this research as I got many responses from researchers that were interested in the work I am doing in my master thesis. I got much motivation, as well as retrieved a bigger network of password interested people from all over the world. This will be an important network to have when I am going to collect the data in the next semester.
+
+  At the end of the conference, I gathered the feedback that resulted in version 3 of the wireframes. The final version is described in detail in the next section.
+
+  \subsection{Wireframes} \label{sec:thewireframes}
+
+  This section includes a description of the prototype for data collection illustrated in wireframes.   
+
     \begin{wrapfigure}{l}{0.35\textwidth}
       \centering
       \vspace{-5pt}
@@ -29,22 +91,8 @@
       \caption{Introduction screen}
       \label{fig:wireframe1}
     \end{wrapfigure}
-    
-  In this section, there will be a description of how to build a system for data collection. The questionnaire will be created as a web application that will be easy to distribute over the Internet. In this report, the design of the system will be described in detail. The implementation will be finished next semester and will, therefore, not be a product included in this project. During this project, I have spent much time designing the look of the system, as well as the structure. The respondents are going to answer the questionnaire on a smartphone; there is many usability requirements that must be considered (Figure~\ref{fig:usability}). First, the system must be easy to learn. When the system should be easy to learn, the respondents should be familiar with icons and elements used in order to be able to complete the questionnaire. Second, the systems should be efficient. When answering on a mobile phone, this should be considered as essential requirements to fulfill. If the questionnaire takes too long time, it is possible that many people will not complete or even want to start.
 
-  To support efficiency, there is added images that easily can be interpreted. Even if the respondent is not fluent in English, the respondent should be able to understand the questions by looking at the icons used. At this point, it is not decided if it is needed to add support for other languages. There is going to be conducted two pilot tests of the wireframes to ensure the two selected usability attributes learnability and efficiency. The first test will focus on the time used for completion of the questionnaire, and the other test will remove the questions in order to test if the icons is understandable. The test will further be described in Section~\ref{sec:pretest}. The new test will be conducted when the system is implemented, and will be carried out and documented next semester.
-
-  \todo{Flytte beskrivelse av usability til sec før. }
-
-  In the wireframes there is used different visual elements for navigation, information, and navigation. 
-  % \begin{figure}
-  %   \centering
-  %   \subfigure{
-  %     \includegraphics[]{}
-  %   }
-  % \end{figure}
-
-  Figure~\ref{fig:wireframe1} is the first screen that the respondents meet when they access the questionnaire. This includes a description of the research, information about the questionnaire, and privacy concerns. This is the first part that the respondents meet, so it is important that the respondent feel confident. The contact information provides a creditability to the questionnaire, so the respondents can feel save that information is handled correctly accordingly to the information that is given. It also allows the respondents to ask questions if they have any questions or want to Google the researcher sending out the questionnaire. A questionnaire asking for personal information might seem scary for some respondents, it is then comforting to be able to see who this person is.
+  Figure~\ref{fig:wireframe1} is the first screen that the respondents meet when they access the questionnaire. This includes a description of the research, information about the questionnaire, and privacy concerns for the respondent. This is the first part that the respondents meet, so it is important that the defendant feel confident. The contact information provides a creditability to the questionnaire, so the respondents can feel save that information is handled correctly accordingly to the information that is given. It also allows the respondents to ask questions if they have any questions or want to Google the researcher responsible for questionnaire. A questionnaire asking for personal information might seem scary for some respondents, it is then comforting to be able to see who this person is.
 
   When the respondents are decided to participate, they press start and is transferred to the screen in Figure~\ref{fig:wireframe2}. This screen is providing information about the Android Unlock Patten, so they can know how to type the pattern. If the respondents have not tried the unlock pattern before, they will get the choice to try the scheme before entering their pattern. For experienced users, they can skip the training for saving time. Figure~\ref{fig:wireframe3} shows the training mode. The registered patterns are collected to be able to compare the pattern in the training mode, as well as the selected patterns. Figure~\ref{fig:wireframe4} is the start screen for the pattern creation. The respondents are asked to make three patterns, one for a shopping account, one pattern for their smartphone, and one pattern for their banking account.
 
@@ -206,12 +254,14 @@
       \caption{Wireframes}
     \end{figure}
 
+
+
   \subsection{Usability Test}\label{sec:pretest}
-  Before sending out the questionnaire, there needs to be performed a usability test on the questionnaire. {\it First}, I need to figure out if the respondents understand the questions stated in the questionnaire. This can cause bias in the data if the questions asked are ambiguous. {\it Second}, the time needed for completion of the questionnaire can not be too long. If the questionnaire takes too long to complete, there is less likely that people want to spend their time completing the questionnaire. At the same time, there is required a lot of data to be able to make see patterns in the data. Therefore, it needs to be a balance between questions and data collected and time of completion.
+  Before implementing the system, I need to be perform a usability test on the proposed prototype. {\it First}, I need to figure out if the respondents understand the questions stated in the questionnaire. This can cause bias in the data if the questions asked are ambiguously. {\it Second}, the time needed for completion of the questionnaire can not be too long. If the questionnaire takes too long to complete, there is less likely that people want to spend their time completing the questionnaire. At the same time, there is required a lot of data to be able to make see patterns in the data. Therefore, it needs to be a balance between questions and data collected and time of completion.
 
-  There is a need to do some quality testing before distributing the questionnaire over the Internet. A pen and paper test will be tested to check whether the wording of the questions as well as getting feedback of the amount of information asked. It is also interesting to ask questions about the ethical aspects of the data collection. If some of the test persons feels that their privacy is leaked by answering the questionnaire, the questions might need to be reevaluated.
+  A pen and paper test will be conducted to check whether the wording of the questions as well as getting feedback of the amount of information asked. It is also interesting to ask questions about the ethical aspects of the data collection. If some of the test persons feels that their privacy is leaked by answering the questionnaire, the questions might need to be reevaluated.
 
-  In this report, there will be conducted two usability tests based on using printed wireframes. As stated in Section~\ref{sec:wireframes}, we want to measure the usability of the questionnaire in terms of effectiveness (time used for completion) and learnability (how easily the respondents understand what to do without help).
+  In this report, there will be conducted two usability tests based on using the wireframes from Section~\ref{sec:thewireframes}. We want to measure the usability of the system in terms of efficiency (time on task), effectiveness (number of errors and completion rate), and satisfaction. When conducting the test with printing the wireframes on paper, it is not easy to measure the time used. The time used will not be accurate because there might be a dialog between me and the participants. It will be observed how easily they complete the task, and afterwards asked if they felt that the questionnaire took too long of a time to complete. The first test will be a complete run through all wireframes. The second test is only testing the icons used in the wireframes.
 
   \subsubsection*{Setup}
 
@@ -222,7 +272,7 @@
 
     \begin{figure}[H]
       \centering
-      \includegraphics[scale=0.08]{pics/test1.png}
+      \includegraphics[width=\textwidth]{pics/test1.png}
       \caption{Usability test 1}
       \label{fig:test1}
     \end{figure}
@@ -231,7 +281,7 @@
 
     \begin{figure}[H]
       \centering
-      \includegraphics[scale=0.05]{pics/test2.png}
+      \includegraphics[scale=0.2]{pics/test2.png}
       \caption{Usability test 2}
       \label{fig:test2}
     \end{figure}
@@ -258,21 +308,4 @@
 
   In test 2, the respondents were challenged with the wireframes that contained icons. They guessed what was asked for and then selected they answer with an explanation of why they did so. All the five respondents (three girls and two boys) managed to interpret the icons and guess most of the questions. There was one participant that guessed that the wireframe in Figure~\ref{fig:wireframe16} was asking if they used the Android scheme. It is quite close, but not the exact question. I do not see this as a problem because all the respondents from test 1 manage to interpret the question correctly. One drawback with this test is that the icons are quite simple, and some of them might not be good enough for the actual implementation. 
 
-  \subsubsection*{Redesign}
-
-  {\bf Navigation}: When implementing the system, it is a need to look at the navigation in a different way. In the test, all the participants was would like a faster way of navigation between the questions asked. One of the proposed solutions is to automatically go to the next questions with support for going back if they selected a wrong answer.
-
-  {\bf The order of the patterns:} One of the respondents requested that it was preferable that the mobile pattern was asked for first because that was a known environment for her. In the design it is stated that is preferable to give a random order of the patterns (using a Latin Square) in order to be able to see if the ordering is impacting the way the respondents create their patterns. This needs to be looked further into when implementing the system. If would be preferable to test whether it will give a higher level of real world data when asking for the mobile patterns first. 
-
-  {\bf Icons used:} The wireframes included icons that was found on the web, and some of the icons might need to be resigned in order to illustrate its corresponding value in a better way. One example is one of the alternatives in Fiqure~\ref{fig:wireframe18} that is trying to illustrate the ``slide-to-unlock'' locking mechanism (the second icon on the right side).
-
-  Beside the navigation and the order of the patterns, there was not provided any other feedback that needs to be redesigned before the implementation. The first version of the implemented system needs to go through a new usability test before starting the actual data collection. 
-
-
-  \subsection{Validity and Reliability}\label{sec:validityandreliability}
-
-    {\bf Content validity}
-
-    {\bf Construct validity}
-
-    {\bf Reliability}
+  The results from both tests is providing important information that will be used to make suggestions for redesign. The Suggested improvements is further described as suggestions in the chapter for further work. 
