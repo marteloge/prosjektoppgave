@@ -20,7 +20,7 @@
 
   The prototype that is being evaluated is a prototype for data collection, e.g., the system. A user is defined as ``the persons who interact with the product'' and is the respondents that answer the survey through the system. The goal of the system is to collect patterns and information about the users. The task that the respondents needs to perform is to provide their answers to the questions asked in the questionnaire (Section~\ref{sec:questions}). The product, for which usability is to be evaluated, is the prototype for the software being implemented on mobile devices.  
 
-  \subsection{Design choices} \label{sec:designChoices}
+  \subsection{Design Choices} \label{sec:designChoices}
     
   This section will be a proposal for how we can build a system for data collection. The system is a prototype of the questionnaire, and will be created as a web application that will be easy to distribute over the Internet. This is only a proposal for a system, and the final system will be implemented next semester. During this project, I have spent much time designing the look and feel of the system, as well as the structure and flow. The final system will only be running on a smartphone.
 
@@ -70,7 +70,7 @@
     \label{fig:navigation}
   \end{figure}
 
-  \subsection{Wireframing - Designing the prototype}
+  \subsection{Wireframing - Designing the Prototype}
 
     The prototype is created with a method called wireframing. A wireframe is low-fidelity prototype design that is sketchy and incomplete. Wireframes are easily constructed at a low cost and is made to avoid design issues when implementing the final system. The wireframes are the first proposal for the data collection system and will be used to test broad concepts of the prototype before the implementation.
 
@@ -204,7 +204,7 @@
       }
     \end{figure}
 
-    Figure~\ref{fig:wireframe17} is asking if the respondents use a screen lock, and if they do, they are redirected to Figure~\ref{fig:wireframe18}. If not, they are directly directed to Figure~\ref{wireframe19}. Figure~\ref{fig:wireframe19} is asking about the mobile Operating System (abbreviated OS) on the mobile used for answering the questionnaire. This is a tricky question to ask because there might be many people that don't know what an operating system is. There are different ways to collect the operating system of the mobile used:
+    Figure~\ref{fig:wireframe17} is asking if the respondents use a screen lock, and if they do, they are redirected to Figure~\ref{fig:wireframe18}. If not, they are directly directed to Figure~\ref{fig:wireframe19}. Figure~\ref{fig:wireframe19} is asking about the mobile Operating System (abbreviated OS) on the mobile used for answering the questionnaire. This is a tricky question to ask because there might be many people that don't know what an operating system is. There are different ways to collect the operating system of the mobile used:
 
       \begin{enumerate}
         \item You can detect the OS without asking.
@@ -214,6 +214,7 @@
 
     The first alternative is not an appropriate way to collect data because I do not want to gather information that the respondents do not know that is collected. The second option is to illustrate the different icons associated with the different mobile operating system. The problem is that the respondent might not know what their mobile operating system is, or they simply don't know what an operating system is. The last option is to detect the mobile OS and then ask the respondent if the detected mobile OS is the mobile OS on their smartphone. It is added an option to answer ``I don't know'' in the case if the respondents feel uncertain. The question is formulated as a generic question: ``is you mobile operating system `detected system' ''. It looks like all participants gets the same question, and the respondents do not get the feeling that the questionnaire is doing something they do not have control over. If the respondent is using an iPhone, the mobile OS can be detected by using JavaScript as described in Listing~\ref{list:mobileOS}.
 
+    \clearpage
     \medskip
     \begin{lstlisting}[caption=Detecting mobile OS, label=list:mobileOS]
       var mobileOS;
@@ -252,6 +253,7 @@
         \label{fig:wireframe21}
       }
       \caption{Wireframes}
+      \label{fig:wireframes}
     \end{figure}
 
 
